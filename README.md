@@ -25,7 +25,7 @@ npm i tyh-ui
 在 main.js 中引入下面内容：
 
 ```js
-import TyhUI from 'tyh-ui/src/index'
+import 'tyh-ui/src/index'
 ```
 
 

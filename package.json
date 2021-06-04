@@ -1,10 +1,10 @@
 {
   "name": "tyh-ui",
-  "version": "1.0.2",
-  "description": "vue 的 ui 组件库",
+  "version": "1.0.7",
+  "description": "vue 的 ui 组件库",
   "main": "index.js",
   "scripts": {
-    "test": "npm i tyh-ui"
+    "test": "npm i tyh-ui"
   },
   "keywords": [
     "tyh-ui"

@@ -1,42 +1,14 @@
 {
-  "_from": "tyh-ui",
-  "_id": "tyh-ui@1.0.2",
-  "_inBundle": false,
-  "_integrity": "sha512-ySNiFuyq8n4eDtEtChXeYmyoCPdpgUFzqs9SLH67ciHB+HDHf/lBYK5CfEhpSEcW1XGI2qOAUqXgVLzU9Vk8GQ==",
-  "_location": "/tyh-ui",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "tyh-ui",
-    "name": "tyh-ui",
-    "escapedName": "tyh-ui",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
+  "name": "tyh-ui",
+  "version": "1.0.2",
+  "description": "vue 的 ui 组件库",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm i tyh-ui"
   },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/tyh-ui/-/tyh-ui-1.0.2.tgz",
-  "_shasum": "2e1351cda822098a0f2c93064dbaab3725ba7e66",
-  "_spec": "tyh-ui",
-  "_where": "D:\\utils\\新建文件夹\\demo测试",
-  "author": {
-    "name": "tyh2001"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "vue 的 ui 组件库",
   "keywords": [
     "tyh-ui"
   ],
-  "license": "ISC",
-  "main": "index.js",
-  "name": "tyh-ui",
-  "scripts": {
-    "test": "npm i tyh-ui"
-  },
-  "version": "1.0.2"
+  "author": "tyh2001",
+  "license": "ISC"
 }

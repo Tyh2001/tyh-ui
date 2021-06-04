@@ -38,10 +38,10 @@ import 'tyh-ui/src/index'
 
 ```vue
 <Tyh-button>默认按钮</Tyh-button>
-<Tyh-button types="primary">主要按钮</Tyh-button>
-<Tyh-button types="success">成功按钮</Tyh-button>
-<Tyh-button types="danger">危险按钮</Tyh-button>
-<Tyh-button types="warning">警告按钮</Tyh-button>
+<Tyh-button type="primary">主要按钮</Tyh-button>
+<Tyh-button type="success">成功按钮</Tyh-button>
+<Tyh-button type="danger">危险按钮</Tyh-button>
+<Tyh-button type="warning">警告按钮</Tyh-button>
 ```
 
 
@@ -49,8 +49,8 @@ import 'tyh-ui/src/index'
 配置项：
 
 | 参数  | 说明           | 类型    | 可选值                               | 默认值 |
-| ----- | -------------- | ------- | -----------------------------------  | ------ |
-| types | 按钮的类型     | string  | primary / success / danger / warning | —      |
+| ----- | -------------- | ------- | ------------------------------------ | ------ |
+| type  | 按钮的类型     | string  | primary / success / danger / warning | —      |
 | round | 是否为圆角按钮 | boolean | true / false                         | false  |
 
 

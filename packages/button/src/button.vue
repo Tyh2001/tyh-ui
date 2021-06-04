@@ -2,9 +2,12 @@
   <button
     class="tyh-button"
     :class="[
-      types ? 'tyh-button--' + types : 'tyh-button--',
+      type ? 'tyh-button--' + type : 'tyh-button--',
       round ? 'tyh-buttom--round' : '',
     ]"
+    @click="onClick"
+    @mousedown="onMousedown"
+    @mouseup="onMouseup"
   >
     <span class="tyh-button-text">
       <slot></slot>
@@ -18,14 +21,10 @@ export default {
   components: {},
   props: {
     // 按钮的类型
-    types: {
-      type: String,
-    },
+    type: String,
 
     // 圆角按钮
-    round: {
-      type: Boolean,
-    },
+    round: Boolean,
   },
   data() {
     return {};
@@ -34,7 +33,18 @@ export default {
   watch: {},
   created() {},
   mounted() {},
-  methods: {},
+  methods: {
+    // 点击事件发生给父组件处理
+    onClick(evt) {
+      this.$emit("click", evt);
+    },
+    onMousedown(evt) {
+      this.$emit("mousedown", evt);
+    },
+    onMouseup(evt) {
+      this.$emit("mouseup", evt);
+    },
+  },
 };
 </script>
 

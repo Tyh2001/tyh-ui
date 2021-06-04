@@ -16,14 +16,10 @@ export default {
   components: {},
   props: {
     // 标签颜色
-    color: {
-      type: String,
-    },
+    color: String,
 
     // 标签大小
-    size: {
-      type: String,
-    }
+    size: String,
   },
   data() {
     return {};

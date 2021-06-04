@@ -4,7 +4,7 @@
 
 ## 前言
 
-tyh-ui 是一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端轻量级组件库
+tyh-ui 是一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端轻量级 UI 组件库
 
 
 
@@ -26,14 +26,13 @@ npm i tyh-ui
 
 ```js
 import TyhUI from 'tyh-ui/src/index'
-Vue.use(TyhUI)
 ```
 
 
 
 ## 组件
 
-### button 按钮
+### Button 按钮
 
 基础用法：
 
@@ -49,10 +48,20 @@ Vue.use(TyhUI)
 
 配置项：
 
-| 参数  | 说明           | 类型    | 可选值                     | 默认值 |
-| ----- | -------------- | ------- | -------------------------- | ------ |
+| 参数  | 说明           | 类型    | 可选值                               | 默认值 |
+| ----- | -------------- | ------- | -----------------------------------  | ------ |
 | types | 按钮的类型     | string  | primary / success / danger / warning | —      |
-| round | 是否为圆角按钮 | boolean | true / false              | false  |
+| round | 是否为圆角按钮 | boolean | true / false                         | false  |
+
+
+
+支持事件：
+
+| 事件名称  | 说明               | 回调参数 |
+| --------- | ------------------ | -------- |
+| click     | 点击事件           | —        |
+| mousedown | 按下鼠标按钮时触发 | —        |
+| mouseup   | 释放鼠标按钮时触发 | —        |
 
 
 
@@ -94,11 +103,11 @@ Vue.use(TyhUI)
 基础用法：
 
 ```vue
-<Tyh-link>链接标签</Tyh-link>
-<Tyh-link color="primary">链接标签</Tyh-link>
-<Tyh-link color="success">链接标签</Tyh-link>
-<Tyh-link color="danger">链接标签</Tyh-link>
-<Tyh-link color="warning">链接标签</Tyh-link>
+<Tyh-tag url="">标签</Tyh-tag>
+<Tyh-tag url="" color="primary">标签</Tyh-tag>
+<Tyh-tag url="" color="success">标签</Tyh-tag>
+<Tyh-tag url="" color="danger">标签</Tyh-tag>
+<Tyh-tag url="" color="warning">标签</Tyh-tag>
 ```
 
 
@@ -106,11 +115,11 @@ Vue.use(TyhUI)
 带有下划线：
 
 ```vue
-<Tyh-link underline>链接标签</Tyh-link>
-<Tyh-link underline color="primary">链接标签</Tyh-link>
-<Tyh-link underline color="success">链接标签</Tyh-link>
-<Tyh-link underline color="danger">链接标签</Tyh-link>
-<Tyh-link underline color="warning">链接标签<Tyh-link>
+<Tyh-link underline>百度</Tyh-link>
+<Tyh-link underline color="primary">百度</Tyh-link>
+<Tyh-link underline color="success">百度</Tyh-link>
+<Tyh-link underline color="danger">百度</Tyh-link>
+<Tyh-link underline color="warning">百度</Tyh-link>
 ```
 
 
@@ -119,10 +128,10 @@ Vue.use(TyhUI)
 
 ```vue
 <Tyh-link hoverline>百度</Tyh-link>
-<Tyh-link hoverline color="primary">链接标签</Tyh-link>
-<Tyh-link hoverline color="success">链接标签</Tyh-link>
-<Tyh-link hoverline color="danger">链接标签</Tyh-link>
-<Tyh-link hoverline color="warning">链接标签</Tyh-link>
+<Tyh-link hoverline color="primary">百度</Tyh-link>
+<Tyh-link hoverline color="success">百度</Tyh-link>
+<Tyh-link hoverline color="danger">百度</Tyh-link>
+<Tyh-link hoverline color="warning">百度</Tyh-link>
 ```
 
 
@@ -131,13 +140,15 @@ Vue.use(TyhUI)
 
 ```vue
 <Tyh-link target="_back">百度</Tyh-link>
-<Tyh-link target="_back" color="primary">链接标签</Tyh-link>
-<Tyh-link target="_back" color="success">链接标签</Tyh-link>
-<Tyh-link target="_back" color="danger">链接标签</Tyh-link>
-<Tyh-link target="_back" color="warning">链接标签</Tyh-link>
+<Tyh-link target="_back" color="primary">百度</Tyh-link>
+<Tyh-link target="_back" color="success">百度</Tyh-link>
+<Tyh-link target="_back" color="danger">百度</Tyh-link>
+<Tyh-link target="_back" color="warning">百度</Tyh-link>
 ```
 
 
+
+配置项：
 
 | 参数      | 说明           | 类型    | 可选值                               | 默认值 |
 | --------- | -------------- | ------- | ------------------------------------ | ------ |
@@ -154,3 +165,80 @@ Vue.use(TyhUI)
 url 参数需要以 `https://www.xxx.com` 或 `http://www.xxx.com` 格式，错误示范：`www.xxx.com`
 
 并不建议 `underline` 和 `hoverline` 两个属性同时使用，同时使用的话 `hoverline` 效果会丢失
+
+
+
+### Input 输入框
+
+基础用法：
+
+```vue
+<template>
+  <Tyh-input v-model="text" />
+</template>
+
+<script>
+export default {
+  data() {
+     return {
+        text: ''
+     }
+  }
+}
+</script>
+```
+
+
+
+密码框：
+
+```vue
+<template>
+  <Tyh-input inpType="password" v-model="text" />
+</template>
+
+<script>
+export default {
+  data() {
+     return {
+        text: ''
+     }
+  }
+}
+</script>
+```
+
+
+
+不同尺寸：
+
+```vue
+<template>
+  <Tyh-input size="big" v-model="text" /><br />
+  <Tyh-input size="medium" v-model="text" /><br />
+  <Tyh-input size="small" v-model="text" /><br />
+  <Tyh-input size="mini" v-model="text" /><br />
+</template>
+
+<script>
+export default {
+  data() {
+     return {
+        text: ''
+     }
+  }
+}
+</script>
+```
+
+
+
+配置项：
+
+| 参数      | 说明           | 类型            | 可选值                      | 默认值 |
+| --------- | -------------- | --------------- | --------------------------- | ------ |
+| v-model   | 绑定值         | string / number | —                           | —      |
+| inpType   | 类型           | string          | text / password             | text   |
+| innerText | 输入框占位文本 | string          | —                           | —      |
+| size      | 文本框尺寸     | string          | big / medium / small / mini | medium |
+

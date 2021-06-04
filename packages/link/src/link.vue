@@ -27,33 +27,19 @@ export default {
   components: {},
   props: {
     // 跳转的路径参数
-    url: {
-      type: String,
-      default: "#",
-    },
+    url: String,
 
     // 字体颜色
-    color: {
-      type: String,
-    },
+    color: String,
 
     // 移入显示下划线
-    hoverline: {
-      type: Boolean,
-      default: false,
-    },
+    hoverline: Boolean,
 
     // 显示下划线
-    underline: {
-      type: Boolean,
-      default: false,
-    },
+    underline: Boolean,
 
     // 是否以一个新的标签页打开
-    target: {
-      type: String,
-      default: "",
-    },
+    target: String,
   },
   data() {
     return {};

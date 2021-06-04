@@ -1,0 +1,35 @@
+.tyh-input {
+  display: inline-block;
+  margin: 3px;
+}
+.tyh-input .tyh-input_inp {
+  border-radius: 5px;
+  font-size: 13px;
+  color: #3f536e;
+  border: 1px solid #c5d9e8;
+  outline: none;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: border 0.35s;
+  background: #fff;
+}
+.tyh-input .tyh-input_inp:focus {
+  border: 1px solid #409eff;
+  transition: border 0.35s;
+}
+.tyh-input_inp--big {
+  height: 40px;
+  width: 270px;
+}
+.tyh-input_inp--medium {
+  height: 31px;
+  width: 240px;
+}
+.tyh-input_inp--small {
+  height: 25px;
+  width: 210px;
+}
+.tyh-input_inp--mini {
+  height: 18px;
+  width: 180px;
+}

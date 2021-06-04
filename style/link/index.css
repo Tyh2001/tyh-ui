@@ -3,6 +3,7 @@
   text-decoration: none;
   margin: 0 2px;
   user-select: none;
+  cursor: pointer;
 }
 .tyh-link-- {
   color: #3f536e;

@@ -7,6 +7,7 @@
   margin: 4px;
   transition: border 0.4s;
   transition: background 0.2s;
+  user-select: none;
 }
 .tyh-button .tyh-button-text {
   font-size: 14px;
@@ -85,6 +86,52 @@
 .tyh-button--warning:active .tyh-button-text {
   color: #fff;
 }
-.tyh-buttom--round {
+.tyh-button--round {
   border-radius: 23px;
+}
+.tyh-button--prohibit-- {
+  cursor: not-allowed;
+  background: #fff;
+}
+.tyh-button--prohibit--:active {
+  background: #fff;
+}
+.tyh-button--prohibit--:active .tyh-button-text {
+  color: #606266;
+}
+.tyh-button--prohibit--primary {
+  cursor: not-allowed;
+  background: #a6d1fe;
+  border: none;
+}
+.tyh-button--prohibit--primary:active {
+  background: #a6d1fe;
+  border: none;
+}
+.tyh-button--prohibit--success {
+  cursor: not-allowed;
+  background: #92ffb0;
+  border: none;
+}
+.tyh-button--prohibit--success:active {
+  background: #92ffb0;
+  border: none;
+}
+.tyh-button--prohibit--danger {
+  cursor: not-allowed;
+  background: #ffa6a2;
+  border: none;
+}
+.tyh-button--prohibit--danger:active {
+  background: #ffa6a2;
+  border: none;
+}
+.tyh-button--prohibit--warning {
+  cursor: not-allowed;
+  background: #ffce85;
+  border: none;
+}
+.tyh-button--prohibit--warning:active {
+  background: #ffce85;
+  border: none;
 }

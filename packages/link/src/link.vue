@@ -1,19 +1,7 @@
 <template>
   <a
     class="tyh-link"
-    :class="[
-      color ? 'tyh-link--' + color : 'tyh-link--',
-      hoverline
-        ? color
-          ? 'tyh-link--hoverline--' + color
-          : 'tyh-link--hoverline'
-        : '',
-      underline
-        ? color
-          ? 'tyh-link--underline--' + color
-          : 'tyh-link--underline'
-        : '',
-    ]"
+    :class="[colorClass, hoverlineClass, underlineClass]"
     :href="url"
     :target="target"
   >
@@ -23,7 +11,7 @@
 
 <script>
 export default {
-  name: "TyhLink",
+  name: 'TyhLink',
   components: {},
   props: {
     // 跳转的路径参数
@@ -39,17 +27,38 @@ export default {
     underline: Boolean,
 
     // 是否以一个新的标签页打开
-    target: String,
+    target: String
   },
-  data() {
-    return {};
+  data () {
+    return {}
   },
-  computed: {},
+  computed: {
+    // 颜色 class
+    colorClass () {
+      return this.color ? 'tyh-link--' + this.color : 'tyh-link--'
+    },
+    // 鼠标移入 class
+    hoverlineClass () {
+      return this.hoverline
+        ? this.color
+          ? 'tyh-link--hoverline--' + this.color
+          : 'tyh-link--hoverline'
+        : ''
+    },
+    // 下划线 class
+    underlineClass () {
+      return this.underline
+        ? this.color
+          ? 'tyh-link--underline--' + this.color
+          : 'tyh-link--underline'
+        : ''
+    }
+  },
   watch: {},
-  created() {},
-  mounted() {},
-  methods: {},
-};
+  created () { },
+  mounted () { },
+  methods: {}
+}
 </script>
 
 <style src="../../../style/link/index.css" scoped></style>

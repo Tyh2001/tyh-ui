@@ -4,13 +4,15 @@ import TyhTag from '../packages/tag'
 import TyhLink from '../packages/link'
 import TyhInput from '../packages/input'
 import TyhList from '../packages/list'
+import TyhCard from '../packages/card'
 
 const components = [
   TyhButton,
   TyhTag,
   TyhLink,
   TyhInput,
-  TyhList
+  TyhList,
+  TyhCard
 ]
 
 function install (Vue) {

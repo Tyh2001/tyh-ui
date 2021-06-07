@@ -353,3 +353,116 @@ content 的数据类型如果是数组，里面包含的是一个一个的对象
 如果 content 的数据类型是 string 或者是数组中不是一个一个的对象的形式，那么这时候 iskey 就算你绑定值也是不生效的。
 ```
 
+
+
+### Card 卡片
+
+**基本使用：**
+
+`title` 自定义卡片的主标题
+
+`subtitle` 自定义卡片的副标题
+
+```vue
+<Tyh-card>
+  <template>
+    <div slot="title">主标题</div>
+    <div slot="subtitle">副标题</div>
+  </template>
+  <p>这是内容部分1</p>
+  <p>这是内容部分2</p>
+  <p>这是内容部分3</p>
+  <p>这是内容部分4</p>
+</Tyh-card>
+```
+
+
+
+简约卡片（没有表头栏）：
+
+`simple` 属性可以配置简约卡片
+
+```vue
+<Tyh-card simple>
+  <template>
+    <div slot="title">主标题</div>
+    <div slot="subtitle">副标题</div>
+  </template>
+  <p>这是内容部分1</p>
+  <p>这是内容部分2</p>
+  <p>这是内容部分3</p>
+  <p>这是内容部分4</p>
+</Tyh-card>
+```
+
+
+
+阴影显示时机：
+
+`shadow` 属性可以配置阴影显示时机
+
+```vue
+<Tyh-card shadow="always">
+  <template>
+    <div slot="title">主标题</div>
+    <div slot="subtitle">副标题</div>
+  </template>
+  <p>这是内容部分1</p>
+  <p>这是内容部分2</p>
+  <p>这是内容部分3</p>
+  <p>这是内容部分4</p>
+</Tyh-card>
+```
+
+```vue
+<Tyh-card shadow="hover">
+  <template>
+    <div slot="title">主标题</div>
+    <div slot="subtitle">副标题</div>
+  </template>
+  <p>这是内容部分1</p>
+  <p>这是内容部分2</p>
+  <p>这是内容部分3</p>
+  <p>这是内容部分4</p>
+</Tyh-card>
+```
+
+```vue
+<Tyh-card shadow="noShadow">
+  <template>
+    <div slot="title">主标题</div>
+    <div slot="subtitle">副标题</div>
+  </template>
+  <p>这是内容部分1</p>
+  <p>这是内容部分2</p>
+  <p>这是内容部分3</p>
+  <p>这是内容部分4</p>
+</Tyh-card>
+```
+
+
+
+**配置项：**
+
+| 参数   | 说明         | 类型    | 可选值                    | 默认值 |
+| ------ | ------------ | ------- | ------------------------- | ------ |
+| simple | 简约卡片     | boolean | true / false              | fasle  |
+| shadow | 阴影显示时机 | string  | always / hover / noShadow | —      |
+
+
+
+**可选插槽：**
+
+| 名称     | 说明               |
+| -------- | ------------------ |
+| title    | 自定义卡片的主标题 |
+| subtitle | 自定义卡片的副标题 |
+
+
+
+**需要注意：**
+
+```
+当你配置了 simple 为 true 时，title 和 subtitle 两个具名插槽是不生效的
+```
+

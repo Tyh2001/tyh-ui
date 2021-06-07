@@ -4,6 +4,7 @@
   border-radius: 6px;
   color: #515a6e;
   padding: 0px;
+
   // 头部
   .tyh-list-header {
     min-height: 45px;
@@ -14,16 +15,20 @@
     padding: 10px 20px;
     box-sizing: border-box;
   }
+
   // 内容
   .tyh-list-content {
     min-height: 80px;
+
     // 没有内容
     .note {
       padding: 20px;
       border-bottom: 1px solid #dcdee2;
     }
+
     .tyh-list-content-ul {
       padding: 0;
+
       // li 列表
       .tyh-list-content-li {
         min-height: 45px;
@@ -34,10 +39,12 @@
         padding: 10px 20px;
         box-sizing: border-box;
         cursor: pointer;
+
         // 最后一个不添加边框
         &:last-child {
           border: none;
         }
+
         // 序号显示
         .tyh-list-content-li-num {
           width: 25px;
@@ -48,12 +55,14 @@
           margin-right: 23px;
         }
       }
+
       // 斑马纹
       .tyh-list-content-li-zebra:nth-child(odd) {
         background: #fafafa;
       }
     }
   }
+
   // 页脚
   .tyh-list-footer {
     min-height: 45px;

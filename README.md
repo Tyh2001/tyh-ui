@@ -1,6 +1,8 @@
 <p align="center">
   <img height="260px" src="https://www.hualigs.cn/image/60c16782369ab.jpg">
 </p>
+
+
 ## 前言
 
 tyh-ui 是一套基于 Vue 2.0 的桌面端轻量级 UI 组件库
@@ -60,4 +62,3 @@ Vue.use(tyhUI)
   <img style=" float: left;" height="60px" src="https://www.hualigs.cn/image/608132a6c15b2.jpg">
   <h4 style="display: inline-block;">tyh2001</h4>
 </div>
-

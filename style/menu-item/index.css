@@ -1,0 +1,23 @@
+.tyh-menu-item .tyh-menu-item-span {
+  border-bottom: 3px solid transparent;
+  line-height: 57px;
+  height: 57px;
+  display: inline-block;
+  padding: 0 22px;
+  font-size: 15px;
+}
+.tyh-menu-item .tyh-menu-item-span {
+  cursor: pointer;
+}
+.tyh-menu-item .tyh-menu-item-span:hover {
+  border-bottom: 3px solid #409eff;
+  transition: border 0.2s;
+}
+.tyh-menu-item .tyh-menu-item-prohibit {
+  cursor: not-allowed;
+  color: #909090 !important;
+}
+.tyh-menu-item .tyh-menu-item-prohibit:hover {
+  border: none;
+  padding-bottom: 3px;
+}

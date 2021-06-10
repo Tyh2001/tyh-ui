@@ -1,0 +1,33 @@
+.tyh-menu-item {
+
+  // 内部的每一项
+  .tyh-menu-item-span {
+    border-bottom: 3px solid transparent;
+    line-height: 57px;
+    height: 57px;
+    display: inline-block;
+    padding: 0 22px;
+    font-size: 15px;
+  }
+
+  // 正常状态
+  .tyh-menu-item-span {
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 3px solid #409eff;
+      transition: border 0.2s;
+    }
+  }
+
+  // 禁用状态
+  .tyh-menu-item-prohibit {
+    cursor: not-allowed;
+    color: rgb(144, 144, 144) !important;
+
+    &:hover {
+      border: none;
+      padding-bottom: 3px;
+    }
+  }
+}

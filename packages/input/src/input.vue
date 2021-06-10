@@ -3,8 +3,8 @@
     <input
       class="tyh-input_inp"
       :class="[sizeClass]"
-      v-model="contentText"
       :type="inpType"
+      :value="value"
       :placeholder="innerText"
       @input="handleInput"
     />
@@ -39,9 +39,7 @@ export default {
     }
   },
   data () {
-    return {
-      contentText: this.value // 文本框输入的内容
-    }
+    return {}
   },
   computed: {
     // 尺寸 class

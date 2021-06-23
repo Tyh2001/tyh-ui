@@ -35,13 +35,13 @@ export default {
   computed: {
     // 颜色 class
     colorClass () {
-      return this.color ? 'tyh-link--' + this.color : 'tyh-link--'
+      return this.color ? `tyh-link--${this.color}` : 'tyh-link--'
     },
     // 鼠标移入 class
     hoverlineClass () {
       return this.hoverline
         ? this.color
-          ? 'tyh-link--hoverline--' + this.color
+          ? `tyh-link--hoverline--${this.color}`
           : 'tyh-link--hoverline'
         : ''
     },
@@ -49,7 +49,7 @@ export default {
     underlineClass () {
       return this.underline
         ? this.color
-          ? 'tyh-link--underline--' + this.color
+          ? `tyh-link--underline--${this.color}`
           : 'tyh-link--underline'
         : ''
     }
@@ -61,4 +61,4 @@ export default {
 }
 </script>
 
-<style src="../../../style/link/index.css" scoped></style>
+<style src="../style/index.css" scoped></style>

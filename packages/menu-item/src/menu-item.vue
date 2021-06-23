@@ -79,4 +79,4 @@ export default {
 }
 </script>
 
-<style src="../../../style/menu-item/index.css" scoped></style>
+<style src="../style/index.css" scoped></style>

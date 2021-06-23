@@ -10,7 +10,7 @@
       <ul class="tyh-list-content-ul">
         <li
           class="tyh-list-content-li"
-          :class="[zebra ? 'tyh-list-content-li-zebra' : '']"
+          :class="[zebraClass]"
           v-for="(item, index) in content"
           :key="index"
         >
@@ -80,7 +80,12 @@ export default {
   data () {
     return {}
   },
-  computed: {},
+  computed: {
+    // 斑马纹 Class
+    zebraClass () {
+      return this.zebra ? 'tyh-list-content-li-zebra' : ''
+    }
+  },
   watch: {},
   created () { },
   mounted () { },
@@ -106,4 +111,4 @@ export default {
 }
 </script>
 
-<style src="../../../style/list/index.css" scoped></style>
+<style src="../style/index.css" scoped></style>

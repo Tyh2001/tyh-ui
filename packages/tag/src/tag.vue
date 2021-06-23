@@ -21,11 +21,11 @@ export default {
   computed: {
     // 主题颜色 class
     colorClass () {
-      return this.color ? 'tyh-tag--' + this.color : 'tyh-tag--'
+      return this.color ? `tyh-tag--${this.color}` : 'tyh-tag--'
     },
     // 尺寸 class
     sizeClass () {
-      return this.size ? 'tyh-tag--' + this.size : ''
+      return this.size ? `tyh-tag--${this.size}` : ''
     }
   },
   watch: {},
@@ -35,4 +35,4 @@ export default {
 }
 </script>
 
-<style src="../../../style/tag/index.css" scoped></style>
+<style src="../style/index.css" scoped></style>

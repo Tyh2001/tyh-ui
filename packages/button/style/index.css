@@ -17,7 +17,7 @@
   transition: background 0.2s;
 }
 .tyh-button-- {
-  background: none;
+  background: #fff;
   border: 1px solid #dcdfe6;
 }
 .tyh-button-- .tyh-button-text {

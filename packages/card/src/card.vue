@@ -45,7 +45,7 @@ export default {
     // 阴影显示时机 class
     shadowClass () {
       return this.shadow
-        ? 'tyh-card-shadow-' + this.shadow
+        ? `tyh-card-shadow-${this.shadow}`
         : ''
     }
   },
@@ -56,4 +56,4 @@ export default {
 }
 </script>
 
-<style src="../../../style/card/index.css" scoped></style>
+<style src="../style/index.css" scoped></style>

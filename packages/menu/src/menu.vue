@@ -37,7 +37,7 @@ export default {
     // 导航栏底部的类型
     bottomTypeClass () {
       return this.bottomType
-        ? 'tyh-menu-bottom-' + this.bottomType
+        ? `tyh-menu-bottom-${this.bottomType}`
         : ''
     }
   },
@@ -48,4 +48,4 @@ export default {
 }
 </script>
 
-<style src="../../../style/menu/index.css" scoped></style>
+<style src="../style/index.css" scoped></style>

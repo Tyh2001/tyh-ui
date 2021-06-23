@@ -6,6 +6,7 @@
       :type="inpType"
       :value="value"
       :placeholder="innerText"
+      :maxlength="max"
       @input="handleInput"
     />
   </div>
@@ -36,7 +37,10 @@ export default {
     size: {
       type: String,
       default: 'medium'
-    }
+    },
+
+    // 最大输入上限
+    max: String
   },
   data () {
     return {}
@@ -44,7 +48,9 @@ export default {
   computed: {
     // 尺寸 class
     sizeClass () {
-      return this.size ? 'tyh-input_inp--' + this.size : 'tyh-input_inp--medium'
+      return this.size
+        ? `tyh-input_inp--${this.size}`
+        : 'tyh-input_inp--medium'
     }
   },
   watch: {},
@@ -60,4 +66,4 @@ export default {
 }
 </script>
 
-<style src="../../../style/input/index.css" scoped></style>
+<style src="../style/index.css" scoped></style>

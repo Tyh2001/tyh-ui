@@ -42,7 +42,7 @@ export default {
     // 显示的位置
     positionClass () {
       return this.position
-        ? 'tyh-tips-' + this.position
+        ? `tyh-tips-${this.position}`
         : 'tyh-tips-top-right'
     },
     // 自定义的背景色
@@ -76,4 +76,4 @@ export default {
 }
 </script>
 
-<style src="../../../style/tips/index.css" scoped></style>
+<style src="../style/index.css" scoped></style>

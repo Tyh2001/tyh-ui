@@ -7,7 +7,7 @@
   box-sizing: border-box;
   position: fixed;
   box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.2);
-  z-index: 99999;
+  z-index: 4000;
 }
 .tyh-tips .tyh-tips-header {
   display: flex;

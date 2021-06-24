@@ -1,9 +1,9 @@
 @font-face {
   font-family: "tyh-icon";
   /* Project id 2628839 */
-  src: url('//at.alicdn.com/t/font_2628839_1ooiwhoghlx.woff2?t=1624498018526') format('woff2'),
-    url('//at.alicdn.com/t/font_2628839_1ooiwhoghlx.woff?t=1624498018526') format('woff'),
-    url('//at.alicdn.com/t/font_2628839_1ooiwhoghlx.ttf?t=1624498018526') format('truetype');
+  src: url('//at.alicdn.com/t/font_2628839_po8uapzwzbe.woff2?t=1624503628423') format('woff2'),
+    url('//at.alicdn.com/t/font_2628839_po8uapzwzbe.woff?t=1624503628423') format('woff'),
+    url('//at.alicdn.com/t/font_2628839_po8uapzwzbe.ttf?t=1624503628423') format('truetype');
 }
 
 .tyh-icon {
@@ -12,6 +12,22 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.tyh-ui-warning-01:before {
+  content: "\e627";
+}
+
+.tyh-ui-danger-01:before {
+  content: "\ea22";
+}
+
+.tyh-ui-success-01:before {
+  content: "\e600";
+}
+
+.tyh-ui-primary-01:before {
+  content: "\e601";
 }
 
 .tyh-ui-huojian-01:before {

@@ -10,7 +10,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #484848;
+  font-size: 14px;
+  z-index: 999999;
 }
 .tyh-backTop:hover {
+  transition: background 0.2s;
   background: #f4f8fd;
 }

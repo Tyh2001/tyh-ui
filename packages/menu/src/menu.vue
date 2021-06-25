@@ -1,9 +1,5 @@
 <template>
-  <div
-    class="tyh-menu"
-    :class="[bottomTypeClass]"
-    :style="[backgroundColorStyle]"
-  >
+  <div class="tyh-menu" :style="[backgroundColorStyle]">
     <slot></slot>
   </div>
 </template>
@@ -18,12 +14,6 @@ export default {
       type: String,
       default: '#545c64',
       required: false
-    },
-
-    // 底部类型
-    bottomType: {
-      type: String,
-      required: false
     }
   },
   data () {
@@ -33,12 +23,6 @@ export default {
     // 导航栏背景色
     backgroundColorStyle () {
       return { background: this.backgroundColor }
-    },
-    // 导航栏底部的类型
-    bottomTypeClass () {
-      return this.bottomType
-        ? `tyh-menu-bottom-${this.bottomType}`
-        : ''
     }
   },
   watch: {},

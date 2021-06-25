@@ -1,5 +1,5 @@
 <template>
-  <i :class="[iconClass]" :style="[iconStyle, sizeStyle]" />
+  <i class="tyh-icon" :class="[iconClass]" :style="[iconStyle, sizeStyle]" />
 </template>
 
 <script>

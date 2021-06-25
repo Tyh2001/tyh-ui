@@ -15,8 +15,8 @@
     <span
       v-else
       class="tyh-menu-item-span"
-      :style="[colorStyle]"
       :class="[prohibitClass]"
+      :style="[colorStyle]"
     >
       <slot></slot>
     </span>

@@ -27,15 +27,13 @@ export default {
     // 阴影显示时机
     shadow: {
       type: String,
-      default: '',
-      required: false
+      default: ''
     },
 
     // 简约卡片
     simple: {
       type: Boolean,
-      default: false,
-      required: false
+      default: false
     }
   },
   data () {

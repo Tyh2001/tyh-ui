@@ -31,22 +31,17 @@ export default {
     // 跳转的地址
     url: {
       type: String,
-      default: null,
-      required: false
+      default: null
     },
-
     // 是否禁用
     prohibit: {
       type: Boolean,
-      default: false,
-      required: false
+      default: false
     },
-
     // 文字颜色
     color: {
       type: String,
-      default: '#fff',
-      required: false
+      default: '#fff'
     }
   },
   data () {

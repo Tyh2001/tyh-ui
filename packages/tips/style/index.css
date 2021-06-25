@@ -18,9 +18,8 @@
   color: #2c405a;
 }
 .tyh-tips .tyh-tips-header .tyh-tips-close {
-  font-size: 20px;
+  font-size: 14px;
   cursor: pointer;
-  user-select: none;
 }
 .tyh-tips .tyh-tips-title-message {
   font-size: 15px;

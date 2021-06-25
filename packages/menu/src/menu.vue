@@ -1,5 +1,9 @@
 <template>
-  <div class="tyh-menu" :style="[backgroundColorStyle]">
+  <div
+    class="tyh-menu"
+    :style="[backgroundColorStyle]"
+    :class="{ 'tyh-menu-bottom-shadow': buttomShadow }"
+  >
     <slot></slot>
   </div>
 </template>
@@ -12,9 +16,10 @@ export default {
     // 背景色
     backgroundColor: {
       type: String,
-      default: '#545c64',
-      required: false
-    }
+      default: '#545c64'
+    },
+    // 是否显示底部阴影
+    buttomShadow: Boolean
   },
   data () {
     return {}
@@ -22,7 +27,9 @@ export default {
   computed: {
     // 导航栏背景色
     backgroundColorStyle () {
-      return { background: this.backgroundColor }
+      return {
+        background: this.backgroundColor
+      }
     }
   },
   watch: {},

@@ -1,5 +1,10 @@
 <template>
-  <i class="tyh-icon" :class="[iconClass]" :style="[iconStyle, sizeStyle]" />
+  <i
+    class="tyh-icon"
+    :class="[iconClass]"
+    :style="[iconStyle, sizeStyle]"
+    @click="iconClick"
+  />
 </template>
 
 <script>
@@ -12,13 +17,11 @@ export default {
     // icon 的颜色
     color: {
       type: String,
-      required: false,
       default: '#606266'
     },
     // icon 的大小
     size: {
       type: String,
-      required: false,
       default: '16'
     }
   },
@@ -46,7 +49,12 @@ export default {
   watch: {},
   created () { },
   mounted () { },
-  methods: {}
+  methods: {
+    // icon 点击事件
+    iconClick (evt) {
+      this.$emit('click', evt)
+    }
+  }
 }
 </script>
 

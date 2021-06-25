@@ -12,14 +12,12 @@ export default {
     // 距离下面的定位距离
     bottom: {
       type: String,
-      required: false,
       default: '40'
     },
 
     // 距离右面的定位距离
     right: {
       type: String,
-      required: false,
       default: '40'
     }
   },

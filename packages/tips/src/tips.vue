@@ -10,9 +10,12 @@
       <h4 class="tyh-tips-title">{{ title }}</h4>
 
       <!-- 关闭按钮 -->
-      <span v-if="showClose" class="tyh-tips-close" @click="closeTips">
-        ×
-      </span>
+      <Tyh-icon
+        v-if="showClose"
+        class="tyh-tips-close"
+        icon="tyh-ui-cloes-02"
+        @click="closeTips"
+      />
     </div>
 
     <!-- 内容部分 -->

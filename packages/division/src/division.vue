@@ -14,7 +14,6 @@ export default {
     // 文字位置
     position: {
       type: String,
-      required: false,
       default: 'left'
     }
   },

@@ -1,11 +1,11 @@
 // 按钮公共样式
 .tyh-button {
-  min-width: 89px;
+  min-width: 40px;
   padding: 0px 15px;
   height: 35px;
   border-radius: 5px;
   cursor: pointer;
-  margin: 4px;
+  margin: 3px;
   transition: border 0.4s;
   transition: background 0.2s;
   user-select: none;
@@ -53,10 +53,6 @@
   &:active {
     background: #66b1ff;
     border: 1px solid #66b1ff;
-
-    .tyh-button-text {
-      color: #fff;
-    }
   }
 }
 
@@ -72,10 +68,6 @@
   &:active {
     background: #2a8143;
     border: 1px solid #2a8143;
-
-    .tyh-button-text {
-      color: #fff;
-    }
   }
 }
 
@@ -91,10 +83,6 @@
   &:active {
     background: #eb7b7b;
     border: 1px solid #eb7b7b;
-
-    .tyh-button-text {
-      color: #fff;
-    }
   }
 }
 
@@ -110,16 +98,45 @@
   &:active {
     background: #ffa319;
     border: 1px solid #ffa319;
-
-    .tyh-button-text {
-      color: #fff;
-    }
   }
 }
 
 // 圆角按钮
 .tyh-button--round {
   border-radius: 23px;
+}
+
+// 朴素按钮
+.tyh-button--primary-simple {
+  background: #e8f4ff;
+
+  .tyh-button-text {
+    color: #409eff;
+  }
+}
+
+.tyh-button--success-simple {
+  background: #e1ffea;
+
+  .tyh-button-text {
+    color: #2ea44f;
+  }
+}
+
+.tyh-button--danger-simple {
+  background: #ffe8e6;
+
+  .tyh-button-text {
+    color: #f05048;
+  }
+}
+
+.tyh-button--warning-simple {
+  background: #fff1e3;
+
+  .tyh-button-text {
+    color: #ff7700;
+  }
 }
 
 // 禁用按钮

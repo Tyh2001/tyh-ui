@@ -1,9 +1,11 @@
 <template>
   <button
     class="tyh-button"
-    :class="[typeClass, roundClass, prohibitClass]"
+    :class="[typeClass, roundClass, prohibitClass, simpleClass]"
     @click="onClick"
   >
+    <!-- icon -->
+    <Tyh-icon v-if="icon" color="#fff" :class="icon" />
     <span class="tyh-button-text">
       <slot></slot>
     </span>
@@ -28,6 +30,18 @@ export default {
     prohibit: {
       type: Boolean,
       default: false
+    },
+
+    // icon
+    icon: {
+      type: String,
+      default: ''
+    },
+
+    // 朴素按钮
+    simple: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
@@ -48,6 +62,12 @@ export default {
     prohibitClass () {
       return this.prohibit
         ? `tyh-button--prohibit--${this.type}`
+        : ''
+    },
+    // 朴素按钮 class
+    simpleClass () {
+      return this.simple
+        ? `tyh-button--${this.type}-simple`
         : ''
     }
   },

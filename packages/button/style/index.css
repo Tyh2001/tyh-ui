@@ -1,10 +1,10 @@
 .tyh-button {
-  min-width: 89px;
+  min-width: 40px;
   padding: 0px 15px;
   height: 35px;
   border-radius: 5px;
   cursor: pointer;
-  margin: 4px;
+  margin: 3px;
   transition: border 0.4s;
   transition: background 0.2s;
   user-select: none;
@@ -41,9 +41,6 @@
   background: #66b1ff;
   border: 1px solid #66b1ff;
 }
-.tyh-button--primary:active .tyh-button-text {
-  color: #fff;
-}
 .tyh-button--success {
   background: #2ea44f;
   border: 1px solid #2ea44f;
@@ -54,9 +51,6 @@
 .tyh-button--success:active {
   background: #2a8143;
   border: 1px solid #2a8143;
-}
-.tyh-button--success:active .tyh-button-text {
-  color: #fff;
 }
 .tyh-button--danger {
   background: #f05048;
@@ -69,9 +63,6 @@
   background: #eb7b7b;
   border: 1px solid #eb7b7b;
 }
-.tyh-button--danger:active .tyh-button-text {
-  color: #fff;
-}
 .tyh-button--warning {
   background: #ff7700;
   border: 1px solid #ff7700;
@@ -83,11 +74,32 @@
   background: #ffa319;
   border: 1px solid #ffa319;
 }
-.tyh-button--warning:active .tyh-button-text {
-  color: #fff;
-}
 .tyh-button--round {
   border-radius: 23px;
+}
+.tyh-button--primary-simple {
+  background: #e8f4ff;
+}
+.tyh-button--primary-simple .tyh-button-text {
+  color: #409eff;
+}
+.tyh-button--success-simple {
+  background: #e1ffea;
+}
+.tyh-button--success-simple .tyh-button-text {
+  color: #2ea44f;
+}
+.tyh-button--danger-simple {
+  background: #ffe8e6;
+}
+.tyh-button--danger-simple .tyh-button-text {
+  color: #f05048;
+}
+.tyh-button--warning-simple {
+  background: #fff1e3;
+}
+.tyh-button--warning-simple .tyh-button-text {
+  color: #ff7700;
 }
 .tyh-button--prohibit-- {
   cursor: not-allowed;

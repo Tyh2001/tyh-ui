@@ -9,16 +9,12 @@
 <script>
 export default {
   name: 'TyhDivision',
-  components: {},
   props: {
     // 文字位置
     position: {
       type: String,
       default: 'left'
     }
-  },
-  data () {
-    return {}
   },
   computed: {
     // 文字位置
@@ -27,11 +23,7 @@ export default {
         ? `tyh-division-text--${this.position}`
         : 'tyh-division-text--left'
     }
-  },
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

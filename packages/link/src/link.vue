@@ -16,21 +16,14 @@ export default {
   props: {
     // 跳转的路径参数
     url: String,
-
     // 字体颜色
     color: String,
-
     // 移入显示下划线
     hoverline: Boolean,
-
     // 显示下划线
     underline: Boolean,
-
     // 是否以一个新的标签页打开
     target: String
-  },
-  data () {
-    return {}
   },
   computed: {
     // 颜色 class
@@ -53,11 +46,7 @@ export default {
           : 'tyh-link--underline'
         : ''
     }
-  },
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

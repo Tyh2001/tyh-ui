@@ -7,16 +7,12 @@
 <script>
 export default {
   name: 'TyhTag',
-  components: {},
   props: {
     // 标签颜色
     color: String,
 
     // 标签大小
     size: String
-  },
-  data () {
-    return {}
   },
   computed: {
     // 主题颜色 class
@@ -27,11 +23,7 @@ export default {
     sizeClass () {
       return this.size ? `tyh-tag--${this.size}` : ''
     }
-  },
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

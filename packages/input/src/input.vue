@@ -15,7 +15,6 @@
 <script>
 export default {
   name: 'TyhInput',
-  components: {},
   props: {
     // 通过父组件 v-model 默认监听 value 事件
     value: [String, Number],
@@ -42,9 +41,6 @@ export default {
     // 最大输入上限
     max: String
   },
-  data () {
-    return {}
-  },
   computed: {
     // 尺寸 class
     sizeClass () {
@@ -53,9 +49,6 @@ export default {
         : 'tyh-input_inp--medium'
     }
   },
-  watch: {},
-  created () { },
-  mounted () { },
   methods: {
     // 输入时触发 input 事件 将新的值再传递给父组件 实现双向绑定
     handleInput (evt) {

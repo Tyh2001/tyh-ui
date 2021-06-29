@@ -27,8 +27,6 @@
 <script>
 export default {
   name: 'TyhTips',
-  components: {},
-  props: {},
   data () {
     return {
       title: '', // 标题
@@ -53,8 +51,6 @@ export default {
       return { background: this.backgroundColor }
     }
   },
-  watch: {},
-  created () { },
   mounted () {
     // 页面初始化之后展示提示框
     this.isShow = true

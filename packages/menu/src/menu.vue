@@ -11,7 +11,6 @@
 <script>
 export default {
   name: 'TyhMenu',
-  components: {},
   props: {
     // 背景色
     backgroundColor: {
@@ -21,9 +20,6 @@ export default {
     // 是否显示底部阴影
     buttomShadow: Boolean
   },
-  data () {
-    return {}
-  },
   computed: {
     // 导航栏背景色
     backgroundColorStyle () {
@@ -31,11 +27,7 @@ export default {
         background: this.backgroundColor
       }
     }
-  },
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

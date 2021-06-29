@@ -1,6 +1,5 @@
 <template>
   <i
-    class="tyh-icon"
     :class="[iconClass]"
     :style="[iconStyle, sizeStyle]"
     @click="iconClick"
@@ -10,7 +9,6 @@
 <script>
 export default {
   name: 'TyhIcon',
-  components: {},
   props: {
     // icon 的 Class
     icon: String,
@@ -24,9 +22,6 @@ export default {
       type: String,
       default: '16'
     }
-  },
-  data () {
-    return {}
   },
   computed: {
     // icon 的 Class
@@ -46,9 +41,6 @@ export default {
       }
     }
   },
-  watch: {},
-  created () { },
-  mounted () { },
   methods: {
     // icon 点击事件
     iconClick (evt) {

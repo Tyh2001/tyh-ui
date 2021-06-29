@@ -26,7 +26,6 @@
 <script>
 export default {
   name: 'TyhMenuItem',
-  components: {},
   props: {
     // 跳转的地址
     url: {
@@ -44,9 +43,6 @@ export default {
       default: '#fff'
     }
   },
-  data () {
-    return {}
-  },
   computed: {
     // 是否禁用
     prohibitClass () {
@@ -59,9 +55,6 @@ export default {
       return { color: this.color }
     }
   },
-  watch: {},
-  created () { },
-  mounted () { },
   methods: {
     // 按钮是如果禁用 就直接返回 否则就跳转对应路由
     onRouterLink () {

@@ -1,8 +1,8 @@
 @font-face {
   font-family: "tyh-icon";
-  src: url('//at.alicdn.com/t/font_2628839_1y53yq3nbr8.woff2?t=1624601895334') format('woff2'),
-    url('//at.alicdn.com/t/font_2628839_1y53yq3nbr8.woff?t=1624601895334') format('woff'),
-    url('//at.alicdn.com/t/font_2628839_1y53yq3nbr8.ttf?t=1624601895334') format('truetype');
+  src: url('//at.alicdn.com/t/font_2628839_h0kvaf24hjh.woff2?t=1624956059882') format('woff2'),
+    url('//at.alicdn.com/t/font_2628839_h0kvaf24hjh.woff?t=1624956059882') format('woff'),
+    url('//at.alicdn.com/t/font_2628839_h0kvaf24hjh.ttf?t=1624956059882') format('truetype');
 }
 
 .tyh-icon {
@@ -11,6 +11,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.tyh-ui-github:before {
+  content: "\e602";
 }
 
 .tyh-ui-cloes-02:before {

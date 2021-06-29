@@ -14,15 +14,11 @@ export default {
       type: String,
       default: '40'
     },
-
     // 距离右面的定位距离
     right: {
       type: String,
       default: '40'
     }
-  },
-  data () {
-    return {}
   },
   computed: {
     // 距离下面的定位距离
@@ -38,9 +34,6 @@ export default {
       }
     }
   },
-  watch: {},
-  created () { },
-  mounted () { },
   methods: {
     backTop () {
       let top = document.documentElement.scrollTop || document.body.scrollTop

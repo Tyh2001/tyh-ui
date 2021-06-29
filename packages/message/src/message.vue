@@ -18,7 +18,6 @@ export default {
   components: {
     TyhIcon
   },
-  props: {},
   data () {
     return {
       isShow: false, // 显示状态
@@ -44,8 +43,6 @@ export default {
       return '#484848'
     }
   },
-  watch: {},
-  created () { },
   mounted () {
     // 初始化后显示提示
     // 在指定毫秒后隐藏
@@ -53,8 +50,7 @@ export default {
     setTimeout(() => {
       this.isShow = false
     }, this.times)
-  },
-  methods: {}
+  }
 }
 </script>
 

@@ -22,7 +22,6 @@
 <script>
 export default {
   name: 'TyhCard',
-  components: {},
   props: {
     // 阴影显示时机
     shadow: {
@@ -36,9 +35,6 @@ export default {
       default: false
     }
   },
-  data () {
-    return {}
-  },
   computed: {
     // 阴影显示时机 class
     shadowClass () {
@@ -46,11 +42,7 @@ export default {
         ? `tyh-card-shadow-${this.shadow}`
         : ''
     }
-  },
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

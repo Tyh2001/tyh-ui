@@ -39,46 +39,37 @@
 <script>
 export default {
   name: 'TyhList',
-  components: {},
   props: {
     // header 内容
     header: {
       type: [String, Number],
       require: false
     },
-
     // 主体内容
     content: {
       type: [Array, String],
       require: false
     },
-
     // 循环体
     iskey: {
       type: String,
       require: false
     },
-
     // footer 内容
     footer: {
       type: [String, Number],
       require: false
     },
-
     // 斑马纹
     zebra: {
       type: Boolean,
       default: false
     },
-
     // 显示序号
     num: {
       type: Boolean,
       default: false
     }
-  },
-  data () {
-    return {}
   },
   computed: {
     // 斑马纹 Class
@@ -86,9 +77,6 @@ export default {
       return this.zebra ? 'tyh-list-content-li-zebra' : ''
     }
   },
-  watch: {},
-  created () { },
-  mounted () { },
   methods: {
     // 根据传来的键名 返回对应的键值
     contentKey (item) {

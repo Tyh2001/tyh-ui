@@ -5,7 +5,7 @@
     @click="onClick"
   >
     <!-- icon -->
-    <Tyh-icon v-if="icon" :icon="icon" />
+    <Tyh-icon v-if="icon" :icon="icon" :color="iconColor" />
     <span class="tyh-button-text" :class="[iconButtonTextClass]">
       <slot></slot>
     </span>
@@ -66,6 +66,10 @@ export default {
     // 有 icon 的按钮文字
     iconButtonTextClass () {
       return this.icon ? 'tyh-button-icon-margin' : ''
+    },
+    // 图标的颜色
+    iconColor () {
+      return this.type === '' ? '' : '#fff'
     }
   },
   methods: {

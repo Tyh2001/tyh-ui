@@ -24,8 +24,12 @@
 </template>
 
 <script>
+import TyhIcon from '../../icon/src/icon'
 export default {
   name: 'TyhInput',
+  components: {
+    TyhIcon
+  },
   props: {
     // 通过父组件 v-model 默认监听 value 事件
     value: [String, Number],

@@ -13,9 +13,12 @@
 </template>
 
 <script>
+import TyhIcon from '../../icon/src/icon'
 export default {
   name: 'TyhButton',
-  components: {},
+  components: {
+    TyhIcon
+  },
   props: {
     // 按钮的类型
     type: {

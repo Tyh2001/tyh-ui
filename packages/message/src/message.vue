@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import TyhIcon from '../../icon/src/icon.vue'
+import TyhIcon from '../../icon/src/icon'
 export default {
   name: 'TyhMessage',
   components: {

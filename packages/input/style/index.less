@@ -1,6 +1,7 @@
 .tyh-input {
   display: inline-block;
   margin: 3px;
+  position: relative;
 
   .tyh-input_inp {
     border-radius: 5px;
@@ -8,15 +9,44 @@
     color: #3f536e;
     border: 1px solid #c5d9e8;
     outline: none;
-    cursor: pointer;
     padding: 0 10px;
     transition: border 0.35s;
     background: #fff;
+    box-sizing: border-box;
 
     &:focus {
       border: 1px solid #409eff;
       transition: border 0.35s
     }
+  }
+
+  // 清空的文本框
+  .tyh-input-clear-padding {
+    padding-right: 26px;
+  }
+
+  .tyh-icon {
+    position: absolute;
+    right: 10px;
+    margin: auto;
+    cursor: pointer;
+  }
+
+  // 不同尺寸的行高
+  .tyh-input-icon-big-height {
+    line-height: 40px;
+  }
+
+  .tyh-input-icon-medium-height {
+    line-height: 31px;
+  }
+
+  .tyh-input-icon-small-height {
+    line-height: 25px;
+  }
+
+  .tyh-input-icon-mini-height {
+    line-height: 26px;
   }
 }
 
@@ -43,4 +73,16 @@
 .tyh-input_inp--mini {
   height: 18px;
   width: 180px;
+}
+
+// 禁用按钮
+.tyh-button-prohibit {
+  background: #f5f7fa !important;
+  border-color: #e4e7ed !important;
+  color: #c0c4cc !important;
+  cursor: not-allowed;
+
+  /deep/ .tyh-icon {
+    cursor: not-allowed !important;
+  }
 }

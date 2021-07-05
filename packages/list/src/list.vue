@@ -41,25 +41,13 @@ export default {
   name: 'TyhList',
   props: {
     // header 内容
-    header: {
-      type: [String, Number],
-      require: false
-    },
+    header: [String, Number],
     // 主体内容
-    content: {
-      type: [Array, String],
-      require: false
-    },
+    content: [Array, String],
     // 循环体
-    iskey: {
-      type: String,
-      require: false
-    },
+    iskey: String,
     // footer 内容
-    footer: {
-      type: [String, Number],
-      require: false
-    },
+    footer: [String, Number],
     // 斑马纹
     zebra: {
       type: Boolean,

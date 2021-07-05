@@ -10,14 +10,12 @@
 export default {
   name: 'TyhDivision',
   props: {
-    // 文字位置
     position: {
       type: String,
       default: 'left'
     }
   },
   computed: {
-    // 文字位置
     positionClass () {
       return this.position
         ? `tyh-division-text--${this.position}`

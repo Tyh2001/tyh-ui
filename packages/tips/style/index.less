@@ -9,25 +9,21 @@
   box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.2);
   z-index: 4000;
 
-  // 头部信息
   .tyh-tips-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    // 标题
     .tyh-tips-title {
       color: #2c405a;
     }
 
-    // 关闭按钮
     .tyh-tips-close {
       font-size: 14px;
       cursor: pointer;
     }
   }
 
-  // 内容
   .tyh-tips-title-message {
     font-size: 15px;
     color: rgb(93, 93, 93);
@@ -35,7 +31,6 @@
   }
 }
 
-// 展示位置
 .tyh-tips-top-right {
   top: 20px;
   right: -320px;
@@ -60,29 +55,24 @@
   animation: tyhTipsBottomLeft 0.23s linear forwards;
 }
 
-// 动画
-// 上右
 @keyframes tyhTipsTopRight {
   to {
     right: 20px;
   }
 }
 
-// 下右
 @keyframes tyhTipsBottomRight {
   to {
     right: 20px;
   }
 }
 
-// 上左
 @keyframes tyhTipsTopLeft {
   to {
     left: 20px;
   }
 }
 
-// 下左
 @keyframes tyhTipsBottomLeft {
   to {
     left: 20px;

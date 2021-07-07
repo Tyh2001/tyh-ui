@@ -1,23 +1,25 @@
 .tyh-button-aurora {
-  margin: 40px auto;
-  min-width: 200px;
-  height: 60px;
+  min-width: 160px;
+  height: 40px;
   padding: 0 30px;
-  // line-height: 60px;
+  box-sizing: border-box;
   text-align: center;
   position: relative;
-  appearance: none;
   background: #f72359;
+  overflow: hidden;
   border: none;
-  color: white;
-  font-size: 1.2em;
   cursor: pointer;
   outline: none;
-  overflow: hidden;
   border-radius: 100px;
 
   .tyh-button-aurora-text {
     position: relative;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  &:active {
+    border: 2px solid #c70fd8e1;
   }
 }
 
@@ -36,5 +38,5 @@
 }
 
 .tyh-button-aurora:hover::before {
-  --size: 400px;
+  --size: 300px;
 }

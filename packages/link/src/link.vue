@@ -14,16 +14,23 @@ export default {
   name: 'TyhLink',
   components: {},
   props: {
+    // 跳转的路径参数
     url: String,
+    // 字体颜色
     color: String,
+    // 移入显示下划线
     hoverline: Boolean,
+    // 显示下划线
     underline: Boolean,
+    // 是否以一个新的标签页打开
     target: String
   },
   computed: {
+    // 颜色 class
     colorClass () {
       return this.color ? `tyh-link--${this.color}` : 'tyh-link--'
     },
+    // 鼠标移入 class
     hoverlineClass () {
       return this.hoverline
         ? this.color
@@ -31,6 +38,7 @@ export default {
           : 'tyh-link--hoverline'
         : ''
     },
+    // 下划线 class
     underlineClass () {
       return this.underline
         ? this.color

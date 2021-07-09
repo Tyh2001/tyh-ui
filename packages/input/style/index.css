@@ -1,9 +1,10 @@
 .tyh-input {
   display: inline-block;
-  margin: 3px;
   position: relative;
+  width: 100%;
 }
 .tyh-input .tyh-input_inp {
+  width: 100%;
   border-radius: 5px;
   font-size: 13px;
   color: #3f536e;
@@ -37,23 +38,19 @@
   line-height: 25px;
 }
 .tyh-input .tyh-input-icon-mini-height {
-  line-height: 26px;
+  line-height: 22px;
 }
 .tyh-input_inp--big {
   height: 40px;
-  width: 270px;
 }
 .tyh-input_inp--medium {
   height: 31px;
-  width: 240px;
 }
 .tyh-input_inp--small {
   height: 25px;
-  width: 210px;
 }
 .tyh-input_inp--mini {
-  height: 18px;
-  width: 180px;
+  height: 22px;
 }
 .tyh-button-prohibit {
   background: #f5f7fa !important;

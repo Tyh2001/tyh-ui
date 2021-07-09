@@ -4,7 +4,6 @@
   height: 35px;
   border-radius: 5px;
   cursor: pointer;
-  margin: 3px;
   transition: border 0.4s;
   transition: background 0.2s;
   user-select: none;

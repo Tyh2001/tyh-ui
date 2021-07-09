@@ -1,9 +1,10 @@
 .tyh-input {
   display: inline-block;
-  margin: 3px;
   position: relative;
+  width: 100%;
 
   .tyh-input_inp {
+    width: 100%;
     border-radius: 5px;
     font-size: 13px;
     color: #3f536e;
@@ -33,6 +34,7 @@
   }
 
   // 不同尺寸的行高
+  // 为了控制小图标
   .tyh-input-icon-big-height {
     line-height: 40px;
   }
@@ -46,7 +48,7 @@
   }
 
   .tyh-input-icon-mini-height {
-    line-height: 26px;
+    line-height: 22px;
   }
 }
 
@@ -54,25 +56,21 @@
 // 特大版
 .tyh-input_inp--big {
   height: 40px;
-  width: 270px;
 }
 
 // 中等尺寸(默认值)
 .tyh-input_inp--medium {
   height: 31px;
-  width: 240px;
 }
 
 // 小版
 .tyh-input_inp--small {
   height: 25px;
-  width: 210px;
 }
 
 // 迷你版
 .tyh-input_inp--mini {
-  height: 18px;
-  width: 180px;
+  height: 22px;
 }
 
 // 禁用按钮

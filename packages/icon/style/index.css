@@ -1,8 +1,8 @@
 @font-face {
   font-family: "tyh-icon";
-  src: url('//at.alicdn.com/t/font_2628839_9vowi94114r.woff2?t=1625457044433') format('woff2'),
-    url('//at.alicdn.com/t/font_2628839_9vowi94114r.woff?t=1625457044433') format('woff'),
-    url('//at.alicdn.com/t/font_2628839_9vowi94114r.ttf?t=1625457044433') format('truetype');
+  src: url('./font_2628839_c47kqa9g97.woff2') format('woff2'),
+    url('./font_2628839_c47kqa9g97.woff') format('woff'),
+    url('./font_2628839_c47kqa9g97.ttf') format('truetype');
 }
 
 .tyh-icon {
@@ -11,6 +11,38 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.tyh-ui-yonghu-01:before {
+  content: "\e628";
+}
+
+.tyh-ui-shop-01:before {
+  content: "\e763";
+}
+
+.tyh-ui-xiazai-01:before {
+  content: "\e60a";
+}
+
+.tyh-ui-dianhua-01:before {
+  content: "\e6b9";
+}
+
+.tyh-ui-shouji-01:before {
+  content: "\e6bd";
+}
+
+.tyh-ui-wenjian-02:before {
+  content: "\e63a";
+}
+
+.tyh-ui-wenjian-01:before {
+  content: "\e61b";
+}
+
+.tyh-ui-shangchuan-01:before {
+  content: "\e626";
 }
 
 .tyh-ui-series-01:before {

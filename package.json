@@ -1,6 +1,6 @@
 {
   "name": "tyh-ui",
-  "version": "1.2.26",
+  "version": "1.2.28",
   "description": "tyh-ui 是一套基于 Vue 2.0 的桌面端轻量级 UI 组件库",
   "main": "index.js",
   "scripts": {

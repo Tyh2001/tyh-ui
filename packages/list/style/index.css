@@ -15,11 +15,10 @@
   box-sizing: border-box;
 }
 .tyh-list .tyh-list-content {
-  min-height: 80px;
+  min-height: 45px;
 }
 .tyh-list .tyh-list-content .note {
   padding: 20px;
-  border-bottom: 1px solid #dcdee2;
 }
 .tyh-list .tyh-list-content .tyh-list-content-ul {
   padding: 0;

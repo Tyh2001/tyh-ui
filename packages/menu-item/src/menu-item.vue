@@ -46,9 +46,7 @@ export default {
   computed: {
     // 是否禁用
     prohibitClass () {
-      return this.prohibit
-        ? 'tyh-menu-item-prohibit'
-        : ''
+      return this.prohibit ? 'tyh-menu-item-prohibit' : ''
     },
     // 文字颜色
     colorStyle () {
@@ -58,9 +56,7 @@ export default {
   methods: {
     // 按钮是如果禁用 就直接返回 否则就跳转对应路由
     onRouterLink () {
-      if (this.prohibit) {
-        return
-      }
+      if (this.prohibit) return
       this.$router.push(this.url)
     }
   }

@@ -9,7 +9,6 @@
 
 <script>
 import TyhIcon from '../../icon/src/icon'
-import Bus from '../../../utils/bus'
 export default {
   name: 'TyhCrumbsItem',
   components: {
@@ -23,9 +22,10 @@ export default {
   },
   data () {
     return {
-      icon: '' // icon 图标
+      icon: ''
     }
   },
+  inject: ['TyhCrumbs'],
   computed: {
     // 传入 to 的类名
     toClass () {
@@ -33,12 +33,10 @@ export default {
     }
   },
   watch: {},
-  created () {
-    Bus.$on('separatorIcon', data => {
-      this.icon = data
-    })
+  created () { },
+  mounted () {
+    this.icon = this.TyhCrumbs.separator
   },
-  mounted () { },
   methods: {
     onRouterTo () {
       if (!this.to) return

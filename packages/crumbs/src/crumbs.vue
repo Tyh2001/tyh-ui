@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import Bus from '../../../utils/bus'
 export default {
   name: 'TyhCrumbs',
   components: {},
@@ -19,12 +18,15 @@ export default {
   data () {
     return {}
   },
+  provide () {
+    return {
+      TyhCrumbs: this
+    }
+  },
   computed: {},
   watch: {},
   created () { },
-  mounted () {
-    Bus.$emit('separatorIcon', this.separator)
-  },
+  mounted () { },
   methods: {}
 }
 </script>

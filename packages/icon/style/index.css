@@ -1,8 +1,8 @@
 @font-face {
   font-family: "tyh-icon";
-  src: url('./font_2628839_qwyejhjn5pa.woff2') format('woff2'),
-    url('./font_2628839_qwyejhjn5pa.woff') format('woff'),
-    url('./font_2628839_qwyejhjn5pa.ttf') format('truetype');
+  src: url('./font_2628839_7pjd323h6q3.woff2') format('woff2'),
+    url('./font_2628839_7pjd323h6q3.woff') format('woff'),
+    url('./font_2628839_7pjd323h6q3.ttf') format('truetype');
 }
 
 .tyh-icon {
@@ -11,6 +11,90 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.tyh-ui-taiyang-01:before {
+  content: "\e641";
+}
+
+.tyh-ui-xingxing-01:before {
+  content: "\e631";
+}
+
+.tyh-ui-yueliang-01:before {
+  content: "\e6a4";
+}
+
+.tyh-ui-aixin-01:before {
+  content: "\e606";
+}
+
+.tyh-ui-wifi-01:before {
+  content: "\e605";
+}
+
+.tyh-ui-diannao-01:before {
+  content: "\e81b";
+}
+
+.tyh-ui-suotou-01:before {
+  content: "\e6f4";
+}
+
+.tyh-ui-chunv:before {
+  content: "\e671";
+}
+
+.tyh-ui-baiyang:before {
+  content: "\e672";
+}
+
+.tyh-ui-sheshou:before {
+  content: "\e673";
+}
+
+.tyh-ui-jinniu:before {
+  content: "\e674";
+}
+
+.tyh-ui-mojie:before {
+  content: "\e675";
+}
+
+.tyh-ui-juxie:before {
+  content: "\e676";
+}
+
+.tyh-ui-shuangzi:before {
+  content: "\e677";
+}
+
+.tyh-ui-shizi:before {
+  content: "\e678";
+}
+
+.tyh-ui-shuangyu:before {
+  content: "\e679";
+}
+
+.tyh-ui-shuiping:before {
+  content: "\e67a";
+}
+
+.tyh-ui-tiancheng:before {
+  content: "\e67b";
+}
+
+.tyh-ui-tianxie:before {
+  content: "\e67c";
+}
+
+.tyh-ui-nv-01:before {
+  content: "\e650";
+}
+
+.tyh-ui-nan-01:before {
+  content: "\e60d";
 }
 
 .tyh-ui-xiexian-01:before {

@@ -2,6 +2,7 @@
   display: inline-block;
   position: relative;
   width: 100%;
+  box-sizing: border-box;
 
   .tyh-input_inp {
     width: 100%;
@@ -26,7 +27,21 @@
     padding-right: 26px;
   }
 
-  .tyh-icon {
+  // 左侧小图标
+  .tyh-input-icon__showIcon {
+    position: absolute;
+    left: 10px;
+    margin: auto;
+    user-select: none;
+  }
+
+  // 有小图标之后需要增加边距
+  .tyh-input__padding-left {
+    padding-left: 30px;
+  }
+
+  // 右侧清空按钮
+  .tyh-input-icon__clear {
     position: absolute;
     right: 10px;
     margin: auto;

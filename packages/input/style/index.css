@@ -2,6 +2,7 @@
   display: inline-block;
   position: relative;
   width: 100%;
+  box-sizing: border-box;
 }
 .tyh-input .tyh-input_inp {
   width: 100%;
@@ -22,7 +23,16 @@
 .tyh-input .tyh-input-clear-padding {
   padding-right: 26px;
 }
-.tyh-input .tyh-icon {
+.tyh-input .tyh-input-icon__showIcon {
+  position: absolute;
+  left: 10px;
+  margin: auto;
+  user-select: none;
+}
+.tyh-input .tyh-input__padding-left {
+  padding-left: 30px;
+}
+.tyh-input .tyh-input-icon__clear {
   position: absolute;
   right: 10px;
   margin: auto;

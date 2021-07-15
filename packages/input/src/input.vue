@@ -1,8 +1,17 @@
 <template>
   <div class="tyh-input" :class="prohibitClass">
+    <Tyh-icon
+      v-if="showIcon"
+      class="tyh-input-icon__showIcon"
+      :class="[iconHeightClass]"
+      :icon="showIcon"
+      size="12"
+      color="rgb(199, 199, 199)"
+      @click="clearInputText"
+    />
     <input
       class="tyh-input_inp"
-      :class="[sizeClass, clearClass, prohibitClass]"
+      :class="[sizeClass, clearClass, prohibitClass, paddingLeftClass]"
       :type="inpType"
       :value="value"
       :placeholder="innerText"
@@ -13,11 +22,12 @@
       @input="handleInput"
     />
     <Tyh-icon
-      v-if="clear || showIcon !== 'tyh-ui-close-03'"
+      v-if="clear"
+      class="tyh-input-icon__clear"
+      :class="[iconHeightClass]"
       size="12"
       color="rgb(199, 199, 199)"
-      :icon="showIcon"
-      :class="[iconHeightClass]"
+      icon="tyh-ui-close-03"
       @click="clearInputText"
     />
   </div>
@@ -56,11 +66,8 @@ export default {
       type: Boolean,
       default: false
     },
-    // 右侧显示的图标
-    showIcon: {
-      type: String,
-      default: 'tyh-ui-close-03'
-    },
+    // 左侧显示的图标
+    showIcon: String,
     // 是否禁用
     prohibit: {
       type: Boolean,
@@ -92,6 +99,10 @@ export default {
     // 是否禁用
     prohibitClass () {
       return this.prohibit ? 'tyh-button-prohibit' : ''
+    },
+    // 当左边有小图标时候，则增加左边距
+    paddingLeftClass () {
+      return this.showIcon ? 'tyh-input__padding-left' : ''
     }
   },
   methods: {
@@ -102,9 +113,6 @@ export default {
     },
     // 点击清空文本框内容
     clearInputText () {
-      if (this.showIcon !== 'tyh-ui-close-03') {
-        return
-      }
       this.$emit('input', '')
     }
   }

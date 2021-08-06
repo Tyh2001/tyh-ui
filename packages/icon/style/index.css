@@ -1,8 +1,8 @@
 @font-face {
   font-family: "tyh-icon";
-  src: url('./font_2628839_a7o68t5j137.woff2') format('woff2'),
-       url('./font_2628839_a7o68t5j137.woff') format('woff'),
-       url('./font_2628839_a7o68t5j137.ttf') format('truetype');
+  src: url('./font_2628839_8vsvvpg4u5.woff2') format('woff2'),
+    url('./font_2628839_8vsvvpg4u5.woff') format('woff'),
+    url('./font_2628839_8vsvvpg4u5.ttf') format('truetype');
 }
 
 .tyh-icon {
@@ -11,6 +11,18 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.tyh-ui-biaoqing-01:before {
+  content: "\e609";
+}
+
+.tyh-ui-jihao-01:before {
+  content: "\e60b";
+}
+
+.tyh-ui-zhaopian-01:before {
+  content: "\e653";
 }
 
 .tyh-ui-dianzan-01:before {

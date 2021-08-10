@@ -7,7 +7,7 @@
 
 tyh-ui 是一套基于 Vue 2.0 的桌面端轻量级 UI 组件库
 
-官网：http://tyhui.tianyuhao.icu
+官网：https://tianyuhao.icu/tyhui/
 
 
 
@@ -48,7 +48,7 @@ Vue.use(tyhUI)
 
 ## 链接
 
-- [官网](http://tyhui.tianyuhao.icu)
+- [官网](https://tianyuhao.icu/tyhui/)
 - [Github](https://github.com/Tyh2001)
 - [官方仓库](https://github.com/Tyh2001/tyh-ui)
 - [npm](https://www.npmjs.com/package/tyh-ui)

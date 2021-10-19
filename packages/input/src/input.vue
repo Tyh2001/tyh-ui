@@ -7,7 +7,6 @@
       :icon="showIcon"
       size="12"
       color="rgb(199, 199, 199)"
-      @click="clearInputText"
     />
     <input
       class="tyh-input_inp"

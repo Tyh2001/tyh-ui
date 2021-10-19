@@ -1,22 +1,10 @@
 <template>
   <span class="tyh-menu-item">
-    <!-- 存在 url -->
     <span
-      v-if="url"
       class="tyh-menu-item-span"
       :class="[prohibitClass]"
       :style="[colorStyle]"
-      @click="onRouterLink"
-    >
-      <slot></slot>
-    </span>
-
-    <!-- 不存在 url 时 -->
-    <span
-      v-else
-      class="tyh-menu-item-span"
-      :class="[prohibitClass]"
-      :style="[colorStyle]"
+      @click="url ? onRouterLink() : ''"
     >
       <slot></slot>
     </span>

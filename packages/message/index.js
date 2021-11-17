@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Message from './src/message'
+import Message from './message'
 
 const MessageConstructor = Vue.extend(Message)
 

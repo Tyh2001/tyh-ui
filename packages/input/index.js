@@ -1,4 +1,4 @@
-import TyhInput from './src/input'
+import TyhInput from './input'
 
 TyhInput.install = function (Vue) {
   Vue.component(TyhInput.name, TyhInput)

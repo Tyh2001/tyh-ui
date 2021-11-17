@@ -1,4 +1,4 @@
-import TyhCard from './src/card'
+import TyhCard from './card'
 
 TyhCard.install = function (Vue) {
   Vue.component(TyhCard.name, TyhCard)

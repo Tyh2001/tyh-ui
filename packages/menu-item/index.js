@@ -1,4 +1,4 @@
-import TyhMenuItem from './src/menu-item'
+import TyhMenuItem from './menu-item'
 
 TyhMenuItem.install = function (Vue) {
   Vue.component(TyhMenuItem.name, TyhMenuItem)

@@ -31,7 +31,7 @@ npm i tyh-ui
 在 main.js 中引入下面内容
 
 ```js
-import tyhUI from 'tyh-ui/lib'
+import tyhUI from 'tyh-ui'
 Vue.use(tyhUI)
 ```
 

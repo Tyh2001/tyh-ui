@@ -2,24 +2,28 @@
   <button
     class="tyh-button"
     :class="[
-      type ? `tyh-button--${type}` : 'tyh-button--',
-      prohibit ? `tyh-button--prohibit--${type}` : '',
+      type ? (!simple ? `tyh-button--${type}` : '') : 'tyh-button--',
+      prohibit
+        ? !simple
+          ? `tyh-button--prohibit--${type}`
+          : `tyh-button--prohibit--${type}-simple`
+        : '',
       simple ? `tyh-button--${type}-simple` : '',
+      size ? `tyh-button--size-${size}` : '',
       {
         'tyh-button--round': round,
+        'tyh-button-icon-margin': icon,
+        'tyh-button-big': big,
       },
     ]"
     @click="onClick"
   >
-    <tyh-icon v-if="icon" :icon="icon" :color="type === '' ? '' : '#fff'" />
-    <span
-      class="tyh-button-text"
-      :class="[
-        {
-          'tyh-button-icon-margin': this.icon,
-        },
-      ]"
-    >
+    <tyh-icon
+      v-if="icon"
+      :icon="icon"
+      :color="type !== 'default' ? '#fff' : ''"
+    />
+    <span class="tyh-button-text" :class="[{ 'tyh-button-icon-margin': icon }]">
       <slot></slot>
     </span>
   </button>
@@ -29,22 +33,13 @@
 export default {
   name: 'TyhButton',
   props: {
-    // 按钮的类型
     type: String,
-    // 圆角按钮
     round: Boolean,
-    // 禁用状态
-    prohibit: {
-      type: Boolean,
-      default: false
-    },
-    // icon
+    prohibit: Boolean, // 禁用状态
     icon: String,
-    // 朴素按钮
-    simple: {
-      type: Boolean,
-      default: false
-    }
+    simple: Boolean,
+    size: String,
+    big: Boolean // 长按钮
   },
   methods: {
     // 点击事件发生给父组件处理

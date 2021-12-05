@@ -14,6 +14,15 @@ import TyhBackTop from '../packages/backTop'
 import TyhIcon from '../packages/icon'
 import TyhCrumbs from '../packages/crumbs'
 import TyhCrumbsItem from '../packages/crumbs-item'
+import TyhAlert from '../packages/alert'
+import TyhAvatar from '../packages/avatar'
+import TyhAside from '../packages/container/TyhAside'
+import TyhContainer from '../packages/container/TyhContainer'
+import TyhFooter from '../packages/container/TyhFooter'
+import TyhHeader from '../packages/container/TyhHeader'
+import TyhMain from '../packages/container/TyhMain'
+import TyhImage from '../packages/image'
+import TyhSkeleton from '../packages/skeleton'
 
 const components = {
   TyhButton,
@@ -28,7 +37,16 @@ const components = {
   TyhBackTop,
   TyhIcon,
   TyhCrumbs,
-  TyhCrumbsItem
+  TyhCrumbsItem,
+  TyhAlert,
+  TyhAvatar,
+  TyhAside,
+  TyhContainer,
+  TyhFooter,
+  TyhHeader,
+  TyhMain,
+  TyhImage,
+  TyhSkeleton
 }
 
 const install = function (Vue) {
@@ -40,7 +58,7 @@ const install = function (Vue) {
 }
 
 const tyhUi = {
-  version: '1.5.1',
+  version: '1.6.0',
   install
 }
 
@@ -58,7 +76,16 @@ export {
   TyhBackTop,
   TyhIcon,
   TyhCrumbs,
-  TyhCrumbsItem
+  TyhCrumbsItem,
+  TyhAlert,
+  TyhAvatar,
+  TyhAside,
+  TyhContainer,
+  TyhFooter,
+  TyhHeader,
+  TyhMain,
+  TyhImage,
+  TyhSkeleton
 }
 
 export default tyhUi

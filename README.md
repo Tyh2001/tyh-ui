@@ -48,7 +48,6 @@ new Vue({
 - [tyh-ui 官网](http://tianyuhao.icu/tyhui)
 - [tyh2001 Github](https://github.com/Tyh2001)
 - [tyh-ui 源码仓库](https://github.com/Tyh2001/tyh-ui)
-- [tyh-ui 官网仓库](https://github.com/Tyh2001/tyh-ui-web)
 - [tyh-ui npm 官方仓库](https://www.npmjs.com/package/tyh-ui)
 
 ## :wave:合作者

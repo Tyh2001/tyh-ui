@@ -33,7 +33,10 @@
 export default {
   name: 'TyhButton',
   props: {
-    type: String,
+    type: {
+      type: String,
+      default: 'default'
+    },
     round: Boolean,
     prohibit: Boolean, // 禁用状态
     icon: String,

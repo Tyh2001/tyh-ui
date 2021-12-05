@@ -58,7 +58,7 @@ const install = function (Vue) {
 }
 
 const tyhUi = {
-  version: '1.6.0',
+  version: '1.6.2',
   install
 }
 

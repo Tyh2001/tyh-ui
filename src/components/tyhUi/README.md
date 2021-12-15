@@ -49,6 +49,7 @@ new Vue({
 - [官网](http://tianyuhao.icu/tyhui)
 - [Github](https://github.com/Tyh2001/tyh-ui)
 - [Npm](https://www.npmjs.com/package/tyh-ui)
+- [更新日志](https://github.com/Tyh2001/tyh-ui/blob/master/CHANGELOG.md)
 
 ## :wave:合作者
 

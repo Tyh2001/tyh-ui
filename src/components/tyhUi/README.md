@@ -6,7 +6,7 @@
 
 tyh-ui 是一套基于 Vue 2.0 的桌面端轻量级 UI 组件库
 
-官网：http://tianyuhao.icu/tyhui
+官网：https://tianyuhao.icu/tyhui
 
 > 开发靠个人:computer:
 
@@ -31,18 +31,24 @@ npm i tyh-ui
 在 `main.js` 中引入下面内容
 
 ```js
-import tyhUI from 'tyh-ui'
+import Vue from 'vue'
+import App from './App.vue'
+
+import tyhUi from 'tyh-ui'
 import 'tyh-ui/style/index.css'
 Vue.use(tyhUI)
+
+new Vue({
+  el: '#app',
+  render: h => h(App)
+})
 ```
 
 ## :earth_africa:链接
 
-- [tyh-ui 官网](http://tyhui.tianyuhao.icu)
-- [tyh2001 Github](https://github.com/Tyh2001)
-- [tyh-ui 源码仓库](https://github.com/Tyh2001/tyh-ui)
-- [tyh-ui 官网仓库](https://github.com/Tyh2001/tyh-ui-web)
-- [tyh-ui npm 官方仓库](https://www.npmjs.com/package/tyh-ui)
+- [官网](http://tianyuhao.icu/tyhui)
+- [Github](https://github.com/Tyh2001/tyh-ui)
+- [Npm](https://www.npmjs.com/package/tyh-ui)
 
 ## :wave:合作者
 

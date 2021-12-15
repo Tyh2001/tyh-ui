@@ -1,4 +1,3 @@
-import '../style/index.css'
 import TyhButton from '../packages/button'
 import TyhTag from '../packages/tag'
 import TyhLink from '../packages/link'

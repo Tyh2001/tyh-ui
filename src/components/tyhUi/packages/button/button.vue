@@ -1,55 +1,64 @@
 <template>
-  <button
-    class="tyh-button"
-    :class="[
-      type ? `tyh-button--${type}` : 'tyh-button--',
-      prohibit ? `tyh-button--prohibit--${type}` : '',
-      simple ? `tyh-button--${type}-simple` : '',
-      {
-        'tyh-button--round': round,
-      },
-    ]"
-    @click="onClick"
-  >
-    <tyh-icon v-if="icon" :icon="icon" :color="type === '' ? '' : '#fff'" />
+  <button :class="isClass()" :disabled="disabled" @click="onClick">
+    <tyh-icon v-if="icon" :icon="icon" :color="textColor()" />
     <span
       class="tyh-button-text"
-      :class="[
-        {
-          'tyh-button-icon-margin': this.icon,
-        },
-      ]"
+      :style="[icon ? 'margin-left:5px' : '', { color: textColor() }]"
     >
-      <slot></slot>
+      <slot />
     </span>
   </button>
 </template>
 
 <script>
+const COLOR = {
+  primary: '#3a6ff4',
+  success: '#54c600',
+  danger: '#d10f1b',
+  warning: '#fbcc30',
+  default: '#3f536e'
+}
 export default {
   name: 'TyhButton',
   props: {
-    // 按钮的类型
-    type: String,
-    // 圆角按钮
-    round: Boolean,
-    // 禁用状态
-    prohibit: {
-      type: Boolean,
-      default: false
+    type: {
+      type: String,
+      default: 'default',
+      validator (val) {
+        return ['default', 'primary', 'success', 'danger', 'warning'].includes(val)
+      }
     },
-    // icon
+    round: Boolean,
+    disabled: Boolean,
     icon: String,
-    // 朴素按钮
-    simple: {
-      type: Boolean,
-      default: false
-    }
+    size: {
+      type: String,
+      validator (val) {
+        return ['large', 'small', 'mini'].includes(val)
+      }
+    },
+    square: Boolean,
+    simple: Boolean
   },
   methods: {
-    // 点击事件发生给父组件处理
+    textColor () {
+      if (this.simple) return COLOR[this.type]
+      return this.type === 'default' || this.type === '' ? '#333' : '#fff'
+    },
+    isClass () {
+      return [
+        'tyh-button',
+        this.simple
+          ? this.disabled ? `tyh-button-simple-disabled-${this.type}` : `tyh-button-simple-${this.type}`
+          : this.disabled ? `tyh-button-disabled-${this.type}` : `tyh-button-${this.type}`,
+        this.size ? `tyh-button-size-${this.size}` : '',
+        {
+          'tyh-button-round': this.round,
+          'tyh-button-square': this.square
+        }
+      ]
+    },
     onClick (evt) {
-      if (this.prohibit) return
       this.$emit('click', evt)
     }
   }

@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-// import tyhUI from './tyhUi'
-import tyhUI from 'tyh-ui'
+// import tyhUI from 'tyh-ui'
 
-console.log(tyhUI)
-Vue.use(tyhUI)
+import tyhUi from './components/tyhUi'
+import './components/tyhUi/style/index.css'
+
+console.log(tyhUi)
+Vue.use(tyhUi)
 Vue.config.productionTip = false
 
 new Vue({

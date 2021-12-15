@@ -1,6 +1,6 @@
 import TyhButton from './button'
 
-TyhButton.install = function (Vue) {
+TyhButton.install = Vue => {
   Vue.component(TyhButton.name, TyhButton)
 }
 

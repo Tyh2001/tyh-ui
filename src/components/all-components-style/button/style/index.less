@@ -1,201 +1,230 @@
-// 按钮公共样式
+@primary: #3a6ff4;
+@success: #54c600;
+@danger: #d10f1b;
+@warning: #fbcc30;
+@default: #f4f5f5;
+
+@primaryHover: #5d88f6;
+@successHover: #6bdb18;
+@dangerHover: #ea3941;
+@warningHover: #fbd659;
+@defaultHover: #eeeeee;
+
+@primaryActive: #0852f3;
+@successActive: #45a200;
+@dangerActive: #b90510;
+@warningActive: #dfb118;
+@defaultActive: #dbdbdb;
+
 .tyh-button {
   min-width: 40px;
-  padding: 0px 17px;
+  padding: 0 22px;
   height: 35px;
   border-radius: 5px;
   cursor: pointer;
-  transition: border 0.4s;
-  transition: background 0.2s;
   user-select: none;
+  border: none;
+  transition: .3s;
+}
 
-  // 按钮上的文字
-  .tyh-button-text {
-    font-size: 14px;
+// 基础按钮
+.tyh-button-primary {
+  background: @primary;
+
+  &:hover {
+    background: @primaryHover;
+    box-shadow: 0 0 3px @primaryHover
   }
 
-  .tyh-button-icon-margin {
-    margin-left: 5px;
-  }
-
-  // 获得焦点时
   &:active {
-    transition: border 0.4s;
-    transition: background 0.2s;
+    background: @primaryActive;
   }
 }
 
-// 默认按钮
-.tyh-button-- {
-  background: #fff;
-  border: 1px solid #dcdfe6;
+.tyh-button-success {
+  background: @success;
 
-  .tyh-button-text {
-    color: #606266;
+  &:hover {
+    background: @successHover;
+    box-shadow: 0 0 3px @successHover
   }
 
   &:active {
-    background: #ecf5ff;
-    border: 1px solid #c6e2ff;
-
-    .tyh-button-text {
-      color: #409eff;
-    }
+    background: @successActive;
   }
 }
 
-// 主要按钮
-.tyh-button--primary {
-  background: #409eff;
-  border: 1px solid #409eff;
+.tyh-button-danger {
+  background: @danger;
 
-  .tyh-button-text {
-    color: #fff;
+  &:hover {
+    background: @dangerHover;
+    box-shadow: 0 0 3px @dangerHover
   }
 
   &:active {
-    background: #66b1ff;
-    border: 1px solid #66b1ff;
+    background: @dangerActive;
   }
 }
 
-// 成功按钮
-.tyh-button--success {
-  background: #2ea44f;
-  border: 1px solid #2ea44f;
+.tyh-button-warning {
+  background: @warning;
 
-  .tyh-button-text {
-    color: #fff;
+  &:hover {
+    background: @warningHover;
+    box-shadow: 0 0 3px @warningHover
   }
 
   &:active {
-    background: #2a8143;
-    border: 1px solid #2a8143;
+    background: @warningActive;
   }
 }
 
-// 危险按钮
-.tyh-button--danger {
-  background: #f05048;
-  border: 1px solid #f05048;
+.tyh-button-,
+.tyh-button-default {
+  background: @default;
 
-  .tyh-button-text {
-    color: #fff;
+  &:hover {
+    background: @defaultHover;
+    box-shadow: 0 0 3px @defaultHover
   }
 
   &:active {
-    background: #eb7b7b;
-    border: 1px solid #eb7b7b;
-  }
-}
-
-// 警告按钮
-.tyh-button--warning {
-  background: #ff7700;
-  border: 1px solid #ff7700;
-
-  .tyh-button-text {
-    color: #fff;
-  }
-
-  &:active {
-    background: #ffa319;
-    border: 1px solid #ffa319;
+    background: @defaultActive;
   }
 }
 
 // 圆角按钮
-.tyh-button--round {
-  border-radius: 23px;
+.tyh-button-round {
+  border-radius: 30px;
 }
 
-// 朴素按钮
-.tyh-button--primary-simple {
-  background: #e8f4ff;
+// 简约按钮
+.tyh-button-simple-primary,
+.tyh-button-simple-success,
+.tyh-button-simple-danger,
+.tyh-button-simple-warning,
+.tyh-button-simple-default {
+  background: @default;
+}
 
-  .tyh-button-text {
-    color: #409eff;
+.tyh-button-simple-primary {
+
+  &:hover {
+    background: @defaultHover;
+    box-shadow: 0 0 3px @defaultHover
   }
-}
-
-.tyh-button--success-simple {
-  background: #e1ffea;
-
-  .tyh-button-text {
-    color: #2ea44f;
-  }
-}
-
-.tyh-button--danger-simple {
-  background: #ffe8e6;
-
-  .tyh-button-text {
-    color: #f05048;
-  }
-}
-
-.tyh-button--warning-simple {
-  background: #fff1e3;
-
-  .tyh-button-text {
-    color: #ff7700;
-  }
-}
-
-// 禁用按钮
-.tyh-button--prohibit-- {
-  cursor: not-allowed;
-  background: #fff;
 
   &:active {
-    background: #fff;
-
-    .tyh-button-text {
-      color: #606266;
-    }
+    background: @defaultActive;
   }
 }
 
-.tyh-button--prohibit--primary {
-  cursor: not-allowed;
-  background: #a6d1fe;
-  border: none;
+.tyh-button-simple-success {
+
+  &:hover {
+    background: @defaultHover;
+    box-shadow: 0 0 3px @defaultHover
+  }
 
   &:active {
-    background: #a6d1fe;
-    border: none;
+    background: @defaultActive;
   }
 }
 
-.tyh-button--prohibit--success {
-  cursor: not-allowed;
-  background: #92ffb0;
-  border: none;
+.tyh-button-simple-danger {
+
+  &:hover {
+    background: @defaultHover;
+    box-shadow: 0 0 3px @defaultHover
+  }
 
   &:active {
-    background: #92ffb0;
-    border: none;
+    background: @defaultActive;
   }
 }
 
-.tyh-button--prohibit--danger {
-  cursor: not-allowed;
-  background: #ffa6a2;
-  border: none;
+.tyh-button-simple-warning {
+
+  &:hover {
+    background: @defaultHover;
+    box-shadow: 0 0 3px @defaultHover
+  }
 
   &:active {
-    background: #ffa6a2;
-    border: none;
+    background: @defaultActive;
   }
 }
 
-.tyh-button--prohibit--warning {
-  cursor: not-allowed;
-  background: #ffce85;
-  border: none;
+.tyh-button-simple-default {
+
+  &:hover {
+    background: @defaultHover;
+    box-shadow: 0 0 3px @defaultHover
+  }
 
   &:active {
-    background: #ffce85;
-    border: none;
+    background: @defaultActive;
   }
+}
+
+// 普通按钮禁用状态
+.tyh-button-disabled-primary,
+.tyh-button-disabled-success,
+.tyh-button-disabled-danger,
+.tyh-button-disabled-warning,
+.tyh-button-disabled-default {
+  opacity: .6;
+  cursor: no-drop;
+}
+
+.tyh-button-disabled-primary {
+  background: @primary;
+}
+
+.tyh-button-disabled-success {
+  background: @success;
+}
+
+.tyh-button-disabled-danger {
+  background: @danger;
+}
+
+.tyh-button-disabled-warning {
+  background: @warning;
+}
+
+.tyh-button-disabled-default {
+  background: @default;
+}
+
+// 简约按钮禁用
+.tyh-button-simple-disabled-primary,
+.tyh-button-simple-disabled-success,
+.tyh-button-simple-disabled-danger,
+.tyh-button-simple-disabled-warning,
+.tyh-button-simple-disabled-default {
+  opacity: .6;
+  cursor: no-drop;
+}
+
+// 按钮大小
+.tyh-button-size-large {
+  width: 100%
+}
+
+.tyh-button-size-small {
+  min-width: 30px;
+  padding: 0 17px;
+  height: 30px
+}
+
+.tyh-button-size-mini {
+  min-width: 20px;
+  padding: 0 12px;
+  height: 25px
+}
+
+.tyh-button-square {
+  border-radius: 0;
 }

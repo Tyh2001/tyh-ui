@@ -1,10 +1,16 @@
 <template>
   <div>
-    <tyh-button @click="aaa" disabled>默认按钮</tyh-button>
-    <tyh-button @click="aaa" type="primary">主要按钮</tyh-button>
-    <tyh-button type="success">成功按钮</tyh-button>
-    <tyh-button type="danger">危险按钮</tyh-button>
-    <tyh-button type="warning">警告按钮</tyh-button>
+    <tyh-link url="">链接一</tyh-link>
+    <tyh-link url="" type="primary">链接二</tyh-link>
+    <tyh-link url="" type="success">链接三</tyh-link>
+    <tyh-link url="" type="danger">链接四</tyh-link>
+    <tyh-link url="" type="warning">链接五</tyh-link>
+
+    <tyh-link url="" prohibit>禁用链接一</tyh-link>
+    <tyh-link url="" prohibit type="primary">禁用链接二</tyh-link>
+    <tyh-link url="" prohibit type="success">禁用链接三</tyh-link>
+    <tyh-link url="" prohibit type="danger">禁用链接四</tyh-link>
+    <tyh-link url="" prohibit type="warning">禁用链接五</tyh-link>
   </div>
 </template>
 

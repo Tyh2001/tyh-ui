@@ -217,72 +217,6 @@
   cursor: not-allowed !important
 }
 
-.tyh-link {
-  font-size: 15px;
-  text-decoration: none;
-  user-select: none;
-  cursor: pointer
-}
-
-.tyh-link-- {
-  color: #3f536e
-}
-
-.tyh-link--primary {
-  color: #409eff
-}
-
-.tyh-link--success {
-  color: #f05048
-}
-
-.tyh-link--danger {
-  color: #2ea44f
-}
-
-.tyh-link--warning {
-  color: #f70
-}
-
-.tyh-link--hoverline:hover {
-  border-bottom: 1px solid #3f536e
-}
-
-.tyh-link--hoverline--primary:hover {
-  border-bottom: 1px solid #409eff
-}
-
-.tyh-link--hoverline--success:hover {
-  border-bottom: 1px solid #f05048
-}
-
-.tyh-link--hoverline--danger:hover {
-  border-bottom: 1px solid #2ea44f
-}
-
-.tyh-link--hoverline--warning:hover {
-  border-bottom: 1px solid #f70
-}
-
-.tyh-link--underline {
-  border-bottom: 1px solid #3f536e
-}
-
-.tyh-link--underline--primary {
-  border-bottom: 1px solid #409eff
-}
-
-.tyh-link--underline--success {
-  border-bottom: 1px solid #f05048
-}
-
-.tyh-link--underline--danger {
-  border-bottom: 1px solid #2ea44f
-}
-
-.tyh-link--underline--warning {
-  border-bottom: 1px solid #f70
-}
 
 .tyh-list {
   width: 100%;
@@ -751,4 +685,32 @@
 }
 .tyh-button-square {
   border-radius: 0;
+}
+.tyh-link {
+  font-size: 15px;
+  user-select: none;
+  cursor: pointer;
+}
+.tyh-link-primary {
+  color: #3a6ff4;
+}
+.tyh-link-success {
+  color: #54c600;
+}
+.tyh-link-danger {
+  color: #d10f1b;
+}
+.tyh-link-warning {
+  color: #fbcc30;
+}
+.tyh-link-default {
+  color: #3f536e;
+}
+.tyh-link-prohibit-primary,
+.tyh-link-prohibit-success,
+.tyh-link-prohibit-danger,
+.tyh-link-prohibit-warning,
+.tyh-link-prohibit-default {
+  opacity: 0.5;
+  cursor: no-drop;
 }

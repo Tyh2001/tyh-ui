@@ -1,6 +1,6 @@
 import TyhLink from './link'
 
-TyhLink.install = function (Vue) {
+TyhLink.install = Vue => {
   Vue.component(TyhLink.name, TyhLink)
 }
 

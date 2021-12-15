@@ -1,50 +1,65 @@
 <template>
   <a
-    class="tyh-link"
-    :class="[colorClass, hoverlineClass, underlineClass]"
-    :href="url"
+    :class="isClass()"
+    :style="[{ textDecoration: underline ? 'none' : 'underline' }]"
+    :href="prohibit ? 'javascript:void(0)' : url"
     :target="target"
   >
-    <slot></slot>
+    <tyh-icon
+      v-if="icon"
+      size="15"
+      :style="[
+        'margin-right: 2px',
+        {
+          cursor: prohibit ? 'no-drop' : 'pointer',
+        },
+      ]"
+      :icon="icon"
+      :color="COLOR[type]"
+    />
+    <slot />
   </a>
 </template>
 
 <script>
+
 export default {
   name: 'TyhLink',
-  components: {},
   props: {
-    // 跳转的路径参数
+    type: {
+      type: String,
+      default: 'default',
+      validator (val) {
+        return ['default', 'primary', 'success', 'danger', 'warning'].includes(val)
+      }
+    },
+    prohibit: Boolean,
     url: String,
-    // 字体颜色
-    color: String,
-    // 移入显示下划线
-    hoverline: Boolean,
-    // 显示下划线
-    underline: Boolean,
-    // 是否以一个新的标签页打开
-    target: String
+    underline: {
+      type: Boolean,
+      default: true
+    },
+    target: String,
+    icon: String
   },
-  computed: {
-    // 颜色 class
-    colorClass () {
-      return this.color ? `tyh-link--${this.color}` : 'tyh-link--'
-    },
-    // 鼠标移入 class
-    hoverlineClass () {
-      return this.hoverline
-        ? this.color
-          ? `tyh-link--hoverline--${this.color}`
-          : 'tyh-link--hoverline'
-        : ''
-    },
-    // 下划线 class
-    underlineClass () {
-      return this.underline
-        ? this.color
-          ? `tyh-link--underline--${this.color}`
-          : 'tyh-link--underline'
-        : ''
+  data () {
+    return {
+      COLOR: {
+        primary: '#3a6ff4',
+        success: '#54c600',
+        danger: '#d10f1b',
+        warning: '#fbcc30',
+        default: '#3f536e'
+      }
+    }
+  },
+  methods: {
+    isClass () {
+      return [
+        'tyh-link',
+        `tyh-link-${this.type}`,
+        this.prohibit ? `tyh-link-prohibit-${this.type}` : ''
+      ]
     }
   }
 }

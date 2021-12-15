@@ -11,7 +11,7 @@
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "element-ui": "^2.15.3",
-    "tyh-ui": "^1.5.1",
+    "tyh-ui": "^1.7.0",
     "vue": "^2.6.11",
     "vue-highlightjs": "^1.3.3",
     "vue-router": "^3.5.2"

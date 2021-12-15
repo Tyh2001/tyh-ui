@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-// import tyhUI from 'tyh-ui'
 
-import tyhUi from './components/tyhUi/src/index'
+import tyhUi from './components/tyhUi'
 import './components/tyhUi/style/index.css'
+
+// import tyhUi from 'tyh-ui'
+// import 'tyh-ui/style/index.css'
 
 console.log(tyhUi)
 Vue.use(tyhUi)

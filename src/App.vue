@@ -1,16 +1,7 @@
 <template>
   <div>
-    <tyh-link url="">链接一</tyh-link>
-    <tyh-link url="" type="primary">链接二</tyh-link>
-    <tyh-link url="" type="success">链接三</tyh-link>
-    <tyh-link url="" type="danger">链接四</tyh-link>
-    <tyh-link url="" type="warning">链接五</tyh-link>
-
-    <tyh-link url="" prohibit>禁用链接一</tyh-link>
-    <tyh-link url="" prohibit type="primary">禁用链接二</tyh-link>
-    <tyh-link url="" prohibit type="success">禁用链接三</tyh-link>
-    <tyh-link url="" prohibit type="danger">禁用链接四</tyh-link>
-    <tyh-link url="" prohibit type="warning">禁用链接五</tyh-link>
+    <tyh-input type="password" v-model="text1" clear />
+    <tyh-input disabled  type="password" v-model="text1" clear @onfocus="aaa" />
   </div>
 </template>
 
@@ -20,7 +11,9 @@ export default {
   components: {},
   props: {},
   data () {
-    return {}
+    return {
+      text1: ''
+    }
   },
   computed: {},
   watch: {},

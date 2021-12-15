@@ -1,33 +1,57 @@
+
 <template>
-  <div class="tyh-input" :class="prohibitClass">
+  <div class="tyh-input" :class="{ 'tyh-input-disabled': disabled }">
     <tyh-icon
-      v-if="showIcon"
-      class="tyh-input-icon__showIcon"
-      :class="[iconHeightClass]"
-      :icon="showIcon"
+      v-if="icon"
+      :class="['tyh-input-icon', `tyh-input-icon-${size}`]"
+      :style="[
+        {
+          cursor: disabled ? 'not-allowed' : 'Default',
+        },
+      ]"
+      color="#c7c7c7"
+      :icon="icon"
       size="12"
-      color="rgb(199, 199, 199)"
     />
     <input
-      class="tyh-input_inp"
-      :class="[sizeClass, clearClass, prohibitClass, paddingLeftClass]"
-      :type="inpType"
+      :class="isClass()"
+      :type="inputType"
       :value="value"
-      :placeholder="innerText"
+      :placeholder="placeholder"
       :maxlength="max"
-      :disabled="prohibit"
+      :disabled="disabled"
       :autofocus="autofocus"
       :name="name"
-      @input="handleInput"
+      @input="input"
+      @keyup.enter="$emit('enter')"
+      @blur="$emit('onblur')"
+      @focus="$emit('onfocus')"
     />
     <tyh-icon
-      v-if="clear"
-      class="tyh-input-icon__clear"
-      :class="[iconHeightClass]"
+      v-if="clear && !showPassword"
+      :class="['tyh-input-clear', `tyh-input-icon-${size}`]"
+      :style="[
+        {
+          cursor: disabled ? 'not-allowed' : 'pointer'
+        }
+      ]"
+      color="#c7c7c7"
+      icon="tyh-ui-guanbi"
       size="12"
-      color="rgb(199, 199, 199)"
-      icon="tyh-ui-close-03"
-      @click="clearInputText"
+      @click.native="clearText"
+    />
+    <tyh-icon
+      v-if="showPassword"
+      :class="['tyh-input-clear', `tyh-input-icon-${size}`]"
+      :style="[
+        {
+          cursor: disabled ? 'not-allowed' : 'pointer',
+        },
+      ]"
+      color="#c7c7c7"
+      :icon="isPass ? 'tyh-ui-browse' : 'tyh-ui-eye-close'"
+      size="12"
+      @click.native="showPasswordFn"
     />
   </div>
 </template>
@@ -37,75 +61,59 @@ export default {
   name: 'TyhInput',
   props: {
     value: String,
-    // 文字中显示的文字
-    innerText: String,
-    // 文本框类型
-    inpType: {
+    placeholder: String,
+    type: {
       type: String,
       default: 'text',
-      validator: function (value) {
-        return ['text', 'password'].indexOf(value) !== -1
+      validator (val) {
+        return ['text', 'password'].includes(val)
       }
     },
-    // 文本框尺寸
     size: {
       type: String,
-      default: 'medium'
+      default: 'medium',
+      validator (val) {
+        return ['large', 'medium', 'small', 'mini'].includes(val)
+      }
     },
-    // 最大输入上限
-    max: String,
-    // 是否可以清空文本框
-    clear: {
-      type: Boolean,
-      default: false
-    },
-    // 左侧显示的图标
-    showIcon: String,
-    // 是否禁用
-    prohibit: {
-      type: Boolean,
-      default: false
-    },
-    // 是否自动获取焦点
-    autofocus: {
-      type: Boolean,
-      default: false
-    },
-    // 原生 name 属性
-    name: String
+    max: Number,
+    clear: Boolean,
+    icon: String,
+    disabled: Boolean,
+    autofocus: Boolean,
+    name: String,
+    showPassword: Boolean
   },
-  computed: {
-    // 尺寸 class
-    sizeClass () {
-      return this.size
-        ? `tyh-input_inp--${this.size}`
-        : 'tyh-input_inp--medium'
-    },
-    // 可清空的文本框
-    clearClass () {
-      return this.clear ? 'tyh-input-clear-padding' : ''
-    },
-    // 不同尺寸的行高
-    iconHeightClass () {
-      return `tyh-input-icon-${this.size}-height`
-    },
-    // 是否禁用
-    prohibitClass () {
-      return this.prohibit ? 'tyh-button-prohibit' : ''
-    },
-    // 当左边有小图标时候，则增加左边距
-    paddingLeftClass () {
-      return this.showIcon ? 'tyh-input__padding-left' : ''
+  data () {
+    return {
+      inputType: this.type,
+      isPass: false
     }
   },
   methods: {
-    // 双向绑定
-    handleInput (evt) {
+    input (evt) {
       this.$emit('input', evt.target.value)
     },
-    // 点击清空文本框内容
-    clearInputText () {
+    clearText () {
+      if (this.disabled) return
       this.$emit('input', '')
+      console.log('12')
+      this.$emit('clear')
+    },
+    isClass () {
+      return [
+        'tyh-input-input',
+        `tyh-input-input-${this.size}`,
+        {
+          'tyh-input-icon-padding': this.icon,
+          'tyh-input-clear-padding': this.clear,
+          'tyh-input-disabled': this.disabled
+        }
+      ]
+    },
+    showPasswordFn () {
+      this.isPass = !this.isPass
+      this.isPass ? this.inputType = 'text' : this.inputType = 'password'
     }
   }
 }

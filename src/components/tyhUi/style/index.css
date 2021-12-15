@@ -374,56 +374,6 @@
   color: #f70
 }
 
-.tyh-tag {
-  min-width: 57px;
-  height: 28px;
-  border-radius: 4px;
-  display: inline-block;
-  font-size: 14px;
-  text-align: center;
-  line-height: 28px;
-  cursor: default;
-  user-select: none;
-  padding: 0 6px
-}
-
-.tyh-tag-- {
-  border: 1px solid #dfdfdf;
-  background-color: #f7f7f7;
-  color: #3f536e
-}
-
-.tyh-tag--primary {
-  background-color: #409eff;
-  color: #fff
-}
-
-.tyh-tag--success {
-  background-color: #f05048;
-  color: #fff
-}
-
-.tyh-tag--danger {
-  background-color: #2ea44f;
-  color: #fff
-}
-
-.tyh-tag--warning {
-  background-color: #f70;
-  color: #fff
-}
-
-.tyh-tag--small {
-  min-width: 49px;
-  height: 25px;
-  line-height: 26px
-}
-
-.tyh-tag--mini {
-  min-width: 41px;
-  height: 22px;
-  line-height: 22px
-}
 
 .tyh-tips {
   width: 320px;
@@ -688,4 +638,80 @@
 .tyh-link-prohibit-default {
   opacity: 0.5;
   cursor: no-drop;
+}
+.tyh-tag {
+  min-width: 57px;
+  height: 28px;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  line-height: 28px;
+  cursor: default;
+  user-select: none;
+  padding: 0 6px;
+}
+.tyh-tag-primary {
+  background: #3a6ff4;
+}
+.tyh-tag-success {
+  background: #54c600;
+}
+.tyh-tag-danger {
+  background: #d10f1b;
+}
+.tyh-tag-warning {
+  background: #fbcc30;
+}
+.tyh-tag-default {
+  background: #e3e3e3;
+}
+.tyh-tag-round {
+  border-radius: 15px;
+}
+.tyh-tag-small {
+  min-width: 49px;
+  height: 25px;
+  line-height: 26px;
+  font-size: 13px;
+}
+.tyh-tag-mini {
+  min-width: 41px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+}
+.tyh-ui-close-03 {
+  cursor: pointer;
+}
+.tyh-table {
+  background: #fff;
+  overflow: auto;
+  display: inline-block;
+  width: 100%;
+}
+.tyh-table .tyh-table-table {
+  border-collapse: collapse;
+}
+.tyh-table .tyh-table-table .tyh-thead-td,
+.tyh-table .tyh-table-table .tyh-tbody-td {
+  padding: 10px;
+  box-sizing: border-box;
+}
+.tyh-table .tyh-table-table .tyh-thead {
+  border-bottom: 1px solid #dcdfe6;
+  color: #6e6e6e;
+}
+.tyh-table .tyh-table-table .tyh-tbody .tyh-tbody-tr {
+  border-bottom: 1px solid #dcdfe6;
+  color: #808080;
+}
+.tyh-table .tyh-table-table .tyh-tbody .tyh-tbody-tr:hover {
+  background: #f5f7fa;
+}
+.tyh-table .tyh-table-table .tyh-tbody .tyh-tbody-tr-zebra:nth-child(odd) {
+  background: #fafafa;
+}
+.tyh-table .tyh-table-table .tyh-table-border {
+  border: 1px solid #dcdfe6;
 }

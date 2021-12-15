@@ -32,6 +32,7 @@ npm i tyh-ui
 
 ```js
 import tyhUI from 'tyh-ui'
+import 'tyh-ui/style/index.css'
 Vue.use(tyhUI)
 ```
 

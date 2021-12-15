@@ -1,4 +1,9 @@
-// 公共样式
+@primary: #3a6ff4;
+@success: #54c600;
+@danger: #d10f1b;
+@warning: #fbcc30;
+@default: #e3e3e3;
+
 .tyh-tag {
   min-width: 57px;
   height: 28px;
@@ -12,49 +17,44 @@
   padding: 0 6px;
 }
 
-// 标签类型
-// 默认标签
-.tyh-tag-- {
-  border: 1px solid #dfdfdf;
-  background-color: #f7f7f7;
-  color: #3f536e;
+.tyh-tag-primary {
+  background: @primary;
 }
 
-// 主要标签
-.tyh-tag--primary {
-  background-color: #409eff;
-  color: #fff;
+.tyh-tag-success {
+  background: @success;
 }
 
-// 成功标签
-.tyh-tag--success {
-  background-color: #f05048;
-  color: #fff;
+.tyh-tag-danger {
+  background: @danger;
 }
 
-// 危险标签
-.tyh-tag--danger {
-  background-color: #2ea44f;
-  color: #fff;
+.tyh-tag-warning {
+  background: @warning;
 }
 
-// 警告标签
-.tyh-tag--warning {
-  background-color: #ff7700;
-  color: #fff;
+.tyh-tag-default {
+  background: @default;
 }
 
-// 标签尺寸
-// 小型标签
-.tyh-tag--small {
+.tyh-tag-round {
+  border-radius: 15px;
+}
+
+.tyh-tag-small {
   min-width: 49px;
   height: 25px;
   line-height: 26px;
+  font-size: 13px;
 }
 
-// 超小标签
-.tyh-tag--mini {
+.tyh-tag-mini {
   min-width: 41px;
   height: 22px;
   line-height: 22px;
+  font-size: 12px;
+}
+
+.tyh-ui-close-03 {
+  cursor: pointer;
 }

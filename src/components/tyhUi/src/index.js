@@ -13,6 +13,7 @@ import TyhBackTop from '../packages/backTop'
 import TyhIcon from '../packages/icon'
 import TyhCrumbs from '../packages/crumbs'
 import TyhCrumbsItem from '../packages/crumbs-item'
+import TyhTable from '../packages/table'
 
 const components = {
   TyhButton,
@@ -27,7 +28,8 @@ const components = {
   TyhBackTop,
   TyhIcon,
   TyhCrumbs,
-  TyhCrumbsItem
+  TyhCrumbsItem,
+  TyhTable
 }
 
 const install = function (Vue) {
@@ -39,7 +41,7 @@ const install = function (Vue) {
 }
 
 const tyhUi = {
-  version: '1.5.2',
+  version: '1.6.0',
   install
 }
 
@@ -57,7 +59,8 @@ export {
   TyhBackTop,
   TyhIcon,
   TyhCrumbs,
-  TyhCrumbsItem
+  TyhCrumbsItem,
+  TyhTable
 }
 
 export default tyhUi

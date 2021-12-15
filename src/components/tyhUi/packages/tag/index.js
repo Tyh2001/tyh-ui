@@ -1,6 +1,6 @@
 import TyhTag from './tag'
 
-TyhTag.install = function (Vue) {
+TyhTag.install = Vue => {
   Vue.component(TyhTag.name, TyhTag)
 }
 

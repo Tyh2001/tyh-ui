@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 // import tyhUI from 'tyh-ui'
 
-import tyhUi from './components/tyhUi'
+import tyhUi from './components/tyhUi/src/index'
 import './components/tyhUi/style/index.css'
 
 console.log(tyhUi)

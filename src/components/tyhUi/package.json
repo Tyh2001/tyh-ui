@@ -1,14 +1,42 @@
 {
   "name": "tyh-ui",
-  "version": "1.7.0",
-  "description": "tyh-ui 是一套基于 Vue 2.0 的桌面端轻量级 UI 组件库",
+  "version": "1.8.0",
+  "description": "tyh ui is a set of desktop lightweight UI component library based on Vue # 2.0.",
   "main": "src/index.js",
   "scripts": {
     "test": "npm i tyh-ui"
   },
   "keywords": [
-    "tyh-ui"
+    "ui",
+    "tyh",
+    "tyh-ui",
+    "tyh-ui2",
+    "vue",
+    "vue3",
+    "setup",
+    "Composition API",
+    "component",
+    "components",
+    "vue-next",
+    "css",
+    "css3",
+    "less",
+    "web",
+    "html",
+    "javascript",
+    "element",
+    "element3",
+    "element-plus",
+    "element-ui"
   ],
-  "author": "tyh2001",
-  "license": "ISC"
+  "author": {
+    "name": "tyh2001",
+    "url": "https://tianyuhao.cn/blog"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tyh2001/tyh-ui/issues"
+  },
+  "homepage": "https://tianyuhao.cn/tyhui",
+  "repository": "https://github.com/Tyh2001/tyh-ui"
 }

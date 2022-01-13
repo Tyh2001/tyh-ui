@@ -1,34 +1,46 @@
 <p align="center">
-  <img height="260px" src="https://www.hualigs.cn/image/60c16782369ab.jpg">
+    <img height="260px" src="https://tianyuhao.cn/images/tyh-ui/tyh-ui-logo.svg">
 </p>
 
-## :bulb:前言
+<p align="center">
+   English | <a href="https://github.com/Tyh2001/tyh-ui/blob/master/README_zh.md">Chinese</a>
+</p>
 
-tyh-ui 是一套基于 Vue 2.0 的桌面端轻量级 UI 组件库
+<p align="center">
+  <a href="https://www.npmjs.com/package/tyh-ui">
+    <img src="https://badgen.net/npm/v/tyh-ui" alt="npm package">
+  </a>
+  <a style="margin-left:15px;" href="https://tianyuhao.cn/tyhui">
+    <img src="https://img.shields.io/badge/tyh--ui-docs-green" alt="docs">
+  </a>
+  <a style="margin-left:15px;" href="https://github.com/Tyh2001/tyh-ui/blob/master/README_zh.md">
+    <img src="https://img.shields.io/badge/tyh--ui-README__zh-blue" alt="README_zh">
+  </a>
+</p>
 
-官网：https://tianyuhao.cn/tyhui
+## Introduction:bulb:
 
-> 开发靠个人:computer:
+Tyh UI is a desktop lightweight UI component library based on vue 2.0
 
-Tyh-ui 是由 tyh2001 独立开发的一款基于 Vue 2.0 的桌面端轻量级 UI 组件库。
+> Development depends on individuals
 
-如果您在使用中有什么问题或 BUG 不妨可以来仓库的 Lssuse 中反馈一下，我很乐意来进行改进。
+tyh ui is a desktop lightweight UI component library based on Vue 2.0 independently developed by tyh2001.
 
-> 轻量易维护:low_brightness:
+If you have any problems or bugs in use, you may wish to give feedback in lsuse of the warehouse. I'm happy to make improvements.
 
-Tyh-ui 是一个极其轻量的组件库，它并没有那么多复杂的目录结构和冗余的代码，清晰明了。
+> Light weight and easy maintenance
 
-但同时 Tyh-ui 还有很多地方需要维护改进，远远不够完美，我正在努力改进中。
+tyh ui is an extremely lightweight component library. It does not have so many complex directory structures and redundant code, so it is clear.
 
-## :wrench:安装
+But at the same time, there are still many places to maintain and improve tyh UI, which is far from perfect. I am trying to improve it.
+
+## Install:wrench:
 
 ```shell
 npm i tyh-ui
 ```
 
-## :key:快速上手
-
-在 `main.js` 中引入下面内容
+## Quick Start:key:
 
 ```js
 import Vue from 'vue'
@@ -44,14 +56,7 @@ new Vue({
 })
 ```
 
-## :earth_africa:链接
-
-- [官网](http://tianyuhao.cn/tyhui)
-- [Github](https://github.com/Tyh2001/tyh-ui)
-- [Npm](https://www.npmjs.com/package/tyh-ui)
-- [更新日志](https://github.com/Tyh2001/tyh-ui/blob/master/CHANGELOG.md)
-
-## :wave:合作者
+## Contribution:wave:
 
 <div style="display: flex; align-items: center;">
   <img style=" float: left;" height="60px" src="https://www.hualigs.cn/image/608132a6c15b2.jpg">

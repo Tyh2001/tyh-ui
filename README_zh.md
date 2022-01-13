@@ -13,8 +13,8 @@
   <a style="margin-left:15px;" href="https://tianyuhao.cn/tyhui">
     <img src="https://img.shields.io/badge/tyh--ui-docs-green" alt="docs">
   </a>
-  <a style="margin-left:15px;" href="">
-    <img src="https://img.shields.io/badge/tyh--ui-README__zh-blue" alt="README_zh">
+  <a style="margin-left:15px;" href="https://github.com/Tyh2001/tyh-ui/blob/master/README.md">
+    <img src="https://img.shields.io/badge/tyh--ui-README__en-brightgreen" alt="README_en">
   </a>
 </p>
 

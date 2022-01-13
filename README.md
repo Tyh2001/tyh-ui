@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-   English | <a href="">Chinese</a>
+   English | <a href="https://github.com/Tyh2001/tyh-ui/blob/master/README_zh.md">Chinese</a>
 </p>
 
 <p align="center">

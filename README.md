@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/tyh-ui2">
+  <a href="https://www.npmjs.com/package/tyh-ui">
     <img src="https://badgen.net/npm/v/tyh-ui" alt="npm package">
   </a>
   <a style="margin-left:15px;" href="https://tianyuhao.cn/tyhui">

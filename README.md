@@ -22,8 +22,6 @@
 
 Tyh UI is a desktop lightweight UI component library based on vue 2.0
 
-官网：https://tianyuhao.cn/tyhui
-
 > Development depends on individuals
 
 tyh ui is a desktop lightweight UI component library based on Vue 2.0 independently developed by tyh2001.

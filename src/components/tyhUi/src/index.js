@@ -41,7 +41,7 @@ const install = function (Vue) {
 }
 
 const tyhUi = {
-  version: '1.9.0',
+  version: '1.9.4',
   install
 }
 

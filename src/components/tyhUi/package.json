@@ -1,10 +1,10 @@
 {
   "name": "tyh-ui",
-  "version": "1.9.2",
+  "version": "1.9.4",
   "description": "tyh ui is a set of desktop lightweight UI component library based on Vue # 2.0.",
   "main": "src/index.js",
   "scripts": {
-    "test": "npm i tyhUi"
+    "test": "npm i tyh-ui"
   },
   "keywords": [
     "ui",
